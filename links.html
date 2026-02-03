@@ -1,0 +1,124 @@
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<script src="e-key.js"></script>
+
+<title>Official Links</title>
+
+<style>
+a {
+  color: white;
+  display: block;
+}
+
+.bg {
+  width: 80%;
+  padding: 6 0;
+  margin: 6;
+  display: block;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid black;
+  border-color: white;
+  border-radius: 6px;
+  transform: scale(1.0);
+  transition: 0.5s;
+}
+
+.bg:hover {
+  background: rgba(0, 0, 0, 0);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+</style>
+
+<!--Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+
+<div id="pframe" style="display: block;">
+<center>
+<div id="particles-js">
+<script src="particles.js">
+    </script>
+    <script src="app.js">
+</script><canvas class="particles-js-canvas-el" width="990" height="647" style="width: 100%; height: 100%;"></canvas>
+</div>
+</center>
+</div>
+
+<script>
+var th = localStorage.getItem('themes');
+th = parseInt(th);
+checkBG();
+
+function checkBG() {
+  if (th == 0) {
+    body.style.background = "linear-gradient(to right, #005eb5, #3d0075)";
+    } if (th == 1) {
+    body.style.background = "linear-gradient(to right, #ff0000, #910000)";
+  } if (th == 2) {
+    body.style.background = "#141414";
+  } if (th == 3) {
+    body.style.background = "linear-gradient(to right, #1bb000, #106900)";
+  } if (th == 4) {
+    body.style.background = "linear-gradient(to right, #db00d4, #780074)";
+  } if (th == 5) {
+    body.style.background = "linear-gradient(to right, #e6d602, #7a7200)";
+  }
+}
+
+var tp = localStorage.getItem('particlet');
+tp = parseInt(tp);
+checkp();
+
+function checkp() {
+  if (tp == 0) {
+    pframe.style.display = "block";
+    ptoggle.innerHTML = "Particles are enabled";
+    ptoggle.style.background = "green";
+  } if (tp == 1) {
+    pframe.style.display = "none";
+    ptoggle.innerHTML = "Particles are disabled";
+    ptoggle.style.background = "red";
+  } if (tp > 1) {
+    tp = 0;
+    checkp();
+  }
+}
+</script>
+
+<div style="position: fixed; right: 0;">
+<button class="c key" onclick="emergency()" style="margin: 0;">E-Key</button>
+</div>
+<!--Logo-->
+<div>
+<a href="index.html"><img class="c logo" src="GHub Logo 4 Simple Light.png" width="auto" height="100%"></a>
+</div>
+
+<!--Links-->
+<center>
+<div class="c sect" style="padding: 6 0; margin: 6;">
+<p style="font-size: 25; margin: 6;"><a href="https://neocities.org/" style="display: inline-block;">Neocities</a>&nbsp;Link</p>
+<a class="bg" href="https://thegportal.neocities.org/" target="_blank">https://thegportal.neocities.org/</a>
+
+<p style="font-size: 25; margin: 6;"><a href="https://nekoweb.org/" style="display: inline-block;">Nekoweb</a>&nbsp;Link</p>
+<a class="bg" href="https://thegportal.nekoweb.org/" target="_blank">https://thegportal.nekoweb.org/</a>
+
+<p style="font-size: 25; margin: 6;"><a href="https://freedns.afraid.org/" style="display: inline-block;">FreeDNS</a>&nbsp;Links</p>
+<p style="font-size: 14; margin: 3;">9 current links, newest ones are on the bottom</p>
+<a class="bg" href="http://schoolisfun.spacetechnology.net/" target="_blank">http://schoolisfun.spacetechnology.net/</a>
+<a class="bg" href="http://scienceverse.info.gf/" target="_blank">http://scienceverse.info.gf/</a>
+<a class="bg" href="http://drive.xxxxx.tw/" target="_blank">http://drive.xxxxx.tw/</a>
+<a class="bg" href="http://schoolhelp.home.kg/" target="_blank">http://schoolhelp.home.kg/</a>
+<a class="bg" href="http://mental-health.happyforever.com/" target="_blank">http://mental-health.happyforever.com/</a>
+<a class="bg" href="http://lofi-tracks.ourspacemusic.com/" target="_blank">http://lofi-tracks.ourspacemusic.com/</a>
+<a class="bg" href="http://mathematics.tipsntricks.ca/" target="_blank">http://mathematics.tipsntricks.ca/</a>
+<a class="bg" href="http://technology.360technologies.ca/" target="_blank">http://technology.360technologies.ca/</a>
+<a class="bg" href="http://blog.homeonthewater.com/" target="_blank">http://blog.homeonthewater.com/</a>
+</div>
+</center>
+</body>

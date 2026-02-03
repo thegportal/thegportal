@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&amp;display=swap" rel="stylesheet">
+
+<style>
+body {
+  font-family: oxanium;
+  background: linear-gradient(to right, #3700eb, #170063);
+  color: white;
+  margin: 0;
+  padding: 0 0;
+}
+
+.button {
+  width: 80%;
+  height: 30px;
+  display: inline-block;
+  font-family: oxanium;
+  background: linear-gradient(to bottom, #6539f7, #3302d1);
+  color: white;
+  margin: 6px;
+  border: 1px solid black;
+  border-color: white;
+  border-radius: 5px;
+  cursor: default;
+  z-index: 5;
+  bottom: 0px;
+  transition: 0.4s;
+}
+
+.button:hover {
+  background: linear-gradient(to bottom, #3700eb, #2902a6);
+  cursor: pointer;
+  z-index: 10;
+  bottom: 4px;
+  transition: 0.4s;
+}
+
+.button:active {
+  background: linear-gradient(to bottom, #6539f7, #3302d1);
+  z-index: 10;
+  bottom: 0px;
+  transition: 0s;
+}
+
+.sha {
+  box-shadow: none;
+  transition: 0.4s;
+}
+
+.sha:hover {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+
+.sha:active {
+  box-shadow: none;
+  transition: 0s;
+}
+
+hr {
+  height: 3px;
+  background-color: white;
+  border: none;
+}
+
+.balance {
+  width: 80%;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  margin: 0px;
+  padding: 0;
+  font-size: 25px;
+}
+
+.message {
+  width: 40%;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  margin: 6px;
+}
+
+.c {
+  z-index: 10;
+  position: relative;
+}
+
+#particles-js {
+    position: fixed;
+    margin: 0;
+    zoom: 100%;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+.content {
+  width: 75%;
+  background: rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  display: inline-block;
+}
+
+.sidebar {
+  width: 25%;
+  background: linear-gradient(to right, #111111, #313131);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  display: inline-block;
+  position: absolute;
+  z-index: 5;
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sbtn {
+  width: 25%;
+  height: 50px;
+  font-family: oxanium;
+  margin: 0px;
+  border-radius: 0;
+}
+
+.start {
+  position: absolute;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+}
+
+.bonusd {
+  width: 80%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+}
+
+.bimage {
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.btext {
+  display: inline-block;
+  position: relative;
+  bottom: 22.5px;
+  font-size: 20px;
+}
+
+p {
+	margin: 6;
+}
+
+.popup {
+	background: linear-gradient(to bottom, #6539f7, #3302d1);
+	position: absolute;
+	width: 80%;
+	height: 40%;
+	min-height: 18px;
+	left: 10%;
+	top: 30%;
+}
+
+.mcon {
+	margin: 0;
+	position: static;
+	padding: 6 0;
+	align-content: center;
+	display: block;
+}
+
+.xbtn {
+	background: red;
+	border: 2px solid black;
+	border-color: white;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	align-content: center;
+}
+
+.xbtn:hover {
+	cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<center>
+<div id="particles-js">
+<script src="https://thegportal.neocities.org/particles.js">
+    </script>
+    <script src="https://thegportal.neocities.org/app.js">
+</script>
+</div>
+</center>
+
+<div class="start" style="display: none;" id="start">
+<button class="c button sha" onclick="start()" style="width: 20%; height: 10%; min-height: 18px; align-content: center; margin: auto; left: 40%; top: 45%;">Start Game</button>
+</div>
+
+<div class="start" style="display: none;" id="msg">
+
+<div class="popup" id="pu1" style="display: none;">
+<div class="mcon">
+<div class="xbtn" onclick="cpo()">
+<center>
+<p style="margin: auto;">X</p>
+</center>
+</div>
+<center>
+<p class="mcon" style="margin: 6px;">You have virus!!</p>
+<button class="c button sha mcon" onclick="p1c()" style="margin: 6px;">Clear Virus!</button>
+</center>
+</div>
+</div>
+
+<div class="popup" id="pu1c" style="display: none;">
+<div class="mcon">
+<div class="xbtn" onclick="cpo()">
+<center>
+<p style="margin: auto;">X</p>
+</center>
+</div>
+<center>
+<p class="mcon" style="margin: 6px;">You got scamed!! You stoopid</p>
+<p class="mcon" style="font-size: 45px; color: red; margin: 6px;">-100 Skibcoins</p>
+</center>
+</div>
+</div>
+
+</div>
+
+<div class="content">
+
+<center>
+
+<hr style="margin: 0px; height: 6px; background: none;">
+
+<div class="c balance" style="display: inline-block; margin: 6;"><p style="display: inline-block;">Balance:&nbsp;</p><p style="display: inline-block;" id="balance">500</p><p style="display: inline-block;">&nbsp;Skibcoins</p>
+<hr>
+<p style="display: inline-block; font-size: 15px; margin: 6;" id="persecond">0</p><p style="display: inline-block; font-size: 15px; margin: 6;">/s</p>
+</div>
+
+<div class="c message" id="message">Welcome.</div>
+
+<button class="c button sha" onclick="work()" id="wbtn" style="width: 220px; height: 220px; border-radius: 110px; font-size: 25px; border: 4px solid black;">Work (+1$)</button>
+
+<div id="bonusdiv" class="bonusd c">
+<div class="bimage">
+<img id="bimage" width="100%" height="100%" src="" style="border-radius: 10px; display: none;">
+</div>
+<p id="btext" class="btext" style="display: inline-block;">Bonus: Nah bruh I can' do that rn fr fr :(</p>
+</div>
+<p style="position: absolute; bottom: 0; left: 0; margin: 0;" id="esound">Click the screen to enable sound.</p>
+</center>
+</div>
+
+<div class="sidebar">
+
+<div style="height: 50px;">
+<button class="button sbtn" style="margin: 0; padding: 0;" onclick="upgrades()">Upgrades</button>
+<button class="button sbtn" style="position: absolute; top: 0; margin: 0; padding: 0;" onclick="gambling()">Gambling</button>
+<button class="button sbtn" style="position: absolute; top: 0; margin: 0; padding: 0; margin-left: 25%; background: linear-gradient(to bottom, #a2a2a3, #545454);" onclick="addons()">Add-Ons (Soon!)</button>
+<button class="button sbtn" style="position: absolute; top: 0; margin-left: 50%;" onclick="settings()">Settings</button>
+</div>
+
+<hr>
+
+<center>
+<div id="ubg">
+<button class="c button sha" onclick="autoW('1', '500')" id="abtn1">Friend (Cost: 500, +1/s)</button>
+<button class="c button sha" onclick="autoW('3', '1200')" id="abtn2">Temu Employee (Cost: 1200, +3/s)</button>
+<button class="c button sha" onclick="autoW('10', '4500')" id="abtn3">Start Small Business (Cost: 4500, +10/s)</button>
+<button class="c button sha" onclick="autoW('25', '10000')" id="abtn4">Open a Restaurant (Cost: 10000, +25/s)</button>
+<button class="c button sha" onclick="autoW('45', '15000')" id="abtn5">Open a Shop (Cost: 15000, +45/s)</button>
+<button class="c button sha" onclick="multij('1', '825')" id="mbtn" style="background: linear-gradient(to bottom, #a2a2a3, #545454);">Multiplier (Cost: 825, Earn*2)</button>
+</div>
+
+<div id="gam" style="display: none;">
+<button class="c button sha" onclick="gamble('6', '0', '3')">Die roll (1/6, Free, +3$)</button>
+<button class="c button sha" onclick="gamble('6', '10', '15')">Gamble (1/6, -10$, +15$)</button>
+<button class="c button sha" onclick="gamble('10', '50', '75')">Gamble (1/10, -50$, +75$)</button>
+<button class="c button sha" onclick="gamble('8', '100', '160')">Gamble (1/8, -100$, +160$)</button>
+<button class="c button sha" onclick="gamble('8', '200', '350')">Gamble (1/8, -200$, +350$)</button>
+<button class="c button sha" onclick="gamble('8', '500', '1000')">Gamble (1/8, -500$, +1000$)</button>
+<button class="c button sha" onclick="gamble('10', '1000', '2200')">Gamble (1/10, -1000$, +2200$)</button>
+<button class="c button sha" onclick="gamble('10', '1750', '5000')">Gamble (1/10, -1750$, +5000$)</button>
+</div>
+
+<div id="addon" style="display: none;">
+<p>Add-Ons will be added soon!</p>
+</div>
+
+<div id="sett" style="display: none;">
+<button class="c button sha" onclick="restart()">Restart</button>
+</div>
+
+<p style="bottom: 0; right: 0; position: absolute; margin: 0; margin-right: 3px;">Version: Beta 1.0.0</p>
+</center>
+</div>
+
+<!--SFX-->
+<!--Yay!-->
+<audio controls id="yaysfx" style="display: none;">
+  <source src="https://files.catbox.moe/6mldjk.mp3">
+</audio>
+
+<!--Womp Womp-->
+<audio controls id="wwsfx" style="display: none;">
+  <source src="https://files.catbox.moe/wmdmlq.mp3">
+</audio>
+
+<!--Bruh-->
+<audio controls id="brsfx" style="display: none;">
+  <source src="https://files.catbox.moe/fit1of.mp3">
+</audio>
+
+<!--Click-->
+<audio controls id="clsfx" style="display: none;">
+  <source src="https://files.catbox.moe/f4vkvp.mp3">
+</audio>
+
+<!--Skibidi-->
+<audio controls id="skibidi" style="display: none;">
+  <source src="https://files.catbox.moe/5m2b88.mp3">
+</audio>
+
+<!--Rizz-->
+<audio controls id="rizz" style="display: none;">
+  <source src="https://files.catbox.moe/od43jx.mp3">
+</audio>
+
+<!--Metal Pipe-->
+<audio controls id="metp" style="display: none;">
+  <source src="https://files.catbox.moe/j9c3qv.mp3">
+</audio>
+
+<!--Thick of It-->
+<audio controls id="toi" style="display: none;">
+  <source src="https://files.catbox.moe/adnqye.mp3">
+</audio>
+
+<!--JS-->
+<script>
+var s = localStorage.getItem('startv');
+balance.innerHTML = localStorage.getItem('skib');
+
+if (s === '' || s === null) {
+  s = 0;
+}
+
+function checkIS() {
+  if (s == 0) {
+    document.getElementById('start').innerHTML = '<button class="c button sha" onclick="start()" style="width: 20%; height: 10%; min-height: 18px; align-content: center; margin: auto; left: 40%; top: 45%;">Start Game</button>';
+    document.getElementById('start').style.display = 'block';
+  } if (s == 1) {
+    document.getElementById('start').innerHTML = '';
+    document.getElementById('start').style.display = 'none';
+  }
+}
+
+checkIS();
+
+function start() {
+  localStorage.setItem('startv', 1);
+  s = localStorage.getItem('startv');
+  checkIS();
+  reset();
+}
+
+if (balance.innerHTML === '' || balance.innerHTML === null) {
+  balance.innerHTML = '500';
+}
+
+function save() {
+  localStorage.setItem('skib', parseInt(balance.innerHTML));
+}
+
+var x;
+
+function gamble(chance, loss, winning) {
+  if (parseInt(balance.innerHTML) >= loss) {
+    x = Math.floor(Math.random()*chance + 1);
+    balance.innerHTML = balance.innerHTML - loss;
+    var a = prompt('Enter your number (1 through ' + chance + ')');
+    if (a == x) {
+      yaysfx.currentTime = 0;
+      document.getElementById('yaysfx').play();
+      message.innerHTML = 'You won ' + winning + ' Skibcoins!';
+      balance.innerHTML = parseInt(balance.innerHTML) + parseInt(winning) + parseInt(loss);
+      save();
+    } else {
+      if (a === '' || a === null) {
+        message.innerHTML = 'Skibcoins refunded.';
+        balance.innerHTML = parseInt(balance.innerHTML) + parseInt(loss);
+      } else {
+        message.innerHTML = 'Aww dang it!';
+        save();
+        wwsfx.currentTime = 0;
+        document.getElementById('wwsfx').play();
+      }
+    }
+  } else {
+    nBalance();
+  }
+}
+
+function work() {
+  clsfx.currentTime = 0;
+  clsfx.volume = 0.2;
+  clsfx.play();
+  balance.innerHTML = parseInt(balance.innerHTML) + Math.round((1 * parseInt(multiplier)) * 10) /10;
+  save();
+}
+
+var amount = localStorage.getItem('amountv');
+
+setInterval(() => {
+	if (amount === '' || amount === null || Number.isNaN(amount)) {
+	  amount = 0;
+		localStorage.setItem('amountv', 0);
+	}
+  if (amount !== '' && amount !== null && !Number.isNaN(amount)) {
+    balance.innerHTML = parseInt(balance.innerHTML) + parseInt(amount * multiplier);
+    save();
+  }
+}, 1000);
+
+function autoW(nu, cost) {
+  if (parseInt(balance.innerHTML) >= cost) {
+    if (confirm('Do you confirm this purchase of ' + cost + ' Skibcoins?')) {
+      amount = parseInt(amount) + parseInt(nu);
+      balance.innerHTML = parseInt(balance.innerHTML) - parseInt(cost);
+      save();
+      localStorage.setItem('amountv', amount);
+			btnChange();
+    }
+  } else {
+    nBalance();
+  }
+}
+
+var multiplier = localStorage.getItem('multiplierv');
+
+btnChange();
+
+if (multiplier === '' || multiplier === null || multiplier === undefined) {
+  multiplier = 1;
+  localStorage.setItem('multiplierv');
+}
+
+function checkmm() {
+if (mm === '' || mm === null || mm === undefined || mm == 0 || Number.isNaN(mm)) {
+  mm = 1;
+  localStorage.setItem('mmm', parseInt(mm));
+}
+}
+
+function checkcst() {
+if (cst === '' || cst === null || cst === undefined || cst == 0 || Number.isNaN(cst)) {
+  cst = Math.floor(825 * mm);
+  localStorage.setItem('cstd', parseInt(cst));
+}
+}
+
+checkmm();
+checkcst();
+
+var mm = localStorage.getItem('mmm');
+var cst = localStorage.getItem('cstd');
+
+function multi(nu, cost) {
+  if (parseInt(balance.innerHTML) >= cst) {
+	if (confirm('Do you confirm this purchase of ' + amount * multiplier + ' Skibcoins?')) {
+    multiplier = parseInt(multiplier) + parseInt(nu);
+    balance.innerHTML = parseInt(balance.innerHTML) - (cost * mm);
+    save();
+    localStorage.setItem('multiplierv', multiplier);
+		mm = mm * 1.2;
+		localStorage.setItem('mmm', mm);
+		cst = Math.floor((cost * mm));
+		localStorage.setItem('cstd', cst);
+    btnChange();
+		}
+  } else {
+    nBalance();
+  }
+}
+
+function btnChange() {
+  mbtn.innerHTML = 'Multiplier (Coming Soon!)';
+  wbtn.innerHTML = 'Work (+' + Math.round((1 * parseInt(multiplier)) * 10) /10 + '$)';
+  abtn1.innerHTML = 'Friend (Cost: 500, +' + parseInt(multiplier) + '/s)';
+	abtn2.innerHTML = 'Temu Employee (Cost: 1200, +' + parseInt(multiplier * 3) + '/s)';
+	abtn3.innerHTML = 'Start Small Business (Cost: 4500, +' + parseInt(multiplier * 10) + '/s)';
+	abtn4.innerHTML = 'Open a Restaurant (Cost: 10000, +' + parseInt(multiplier * 25) + '/s)';
+	abtn5.innerHTML = 'Open a Shop (Cost: 15000, +' + parseInt(multiplier * 45) + '/s)';
+	persecond.innerHTML = amount * parseInt(multiplier);
+}
+
+btnChange();
+
+function nBalance() {
+  message.innerHTML = 'Not enough balance :(';
+  brsfx.currentTime = 0;
+  document.getElementById('brsfx').play();
+}
+
+function restart() {
+  if (confirm('Are you sure you want to restart? All of your progress will be lost!')) {
+    reset();
+  }
+}
+
+function reset() {
+  balance.innerHTML = 500;
+  save();
+  amount = 0;
+  localStorage.setItem('amountv', amount);
+  multiplier = 1;
+  localStorage.setItem('multiplierv', multiplier);
+	mm = 0;
+	localStorage.setItem('mmm', mm);
+	cst = 0;
+	localStorage.setItem('cstd', cst);
+	checkmm();
+  btnChange();
+}
+
+upgrades();
+
+function upgrades() {
+  gam.style.display = 'none';
+  ubg.style.display = 'block';
+	addon.style.display = 'none';
+  sett.style.display = 'none';
+}
+
+function gambling() {
+  gam.style.display = 'block';
+  ubg.style.display = 'none';
+	addon.style.display = 'none';
+  sett.style.display = 'none';
+}
+
+function addons() {
+  gam.style.display = 'none';
+  ubg.style.display = 'none';
+	addon.style.display = 'block';
+  sett.style.display = 'none';
+}
+
+function settings() {
+  gam.style.display = 'none';
+  ubg.style.display = 'none';
+	addon.style.display = 'none';
+  sett.style.display = 'block';
+}
+
+var textd = Array(
+  'Skibidi Toilet',
+  'Rizz',
+	'Metal Pipe',
+	'Thick of It',
+);
+
+var imaged = Array(
+  'https://files.catbox.moe/s4qq2b.jpg',
+  'https://files.catbox.moe/gkfchl.png',
+	'https://files.catbox.moe/a73112.webp',
+	'https://files.catbox.moe/5zq18v.png',
+);
+
+var sfxd = Array(
+  'skibidi',
+  'rizz',
+	'metp',
+	'toi',
+);
+
+setInterval(() => {
+  callB();
+}, Math.floor(Math.random() * 30000) + 30000);
+
+function callB() {
+  var rl = Math.floor(Math.random()*imaged.length);
+  console.log(rl);
+  btext.innerHTML = 'Bonus: ' + textd[rl] + '<button class="button sha" onclick="claimB()" id="cbtn" style="width: 200px;">Claim Bonus (75$)</button>';
+  bimage.style.background = '#25fa5b';
+  bimage.style.display = 'block';
+  bimage.src = imaged[rl];
+  au = sfxd[rl];
+  document.getElementById(au).currentTime = 0;
+  document.getElementById(au).play();
+}
+
+function claimB() {
+  balance.innerHTML = parseInt(balance.innerHTML) + 75;
+  save();
+  btext.innerHTML = 'Bonus: ' + 'Nah bruh I can\' do that rn fr fr :(';
+  bimage.style.background = 'rgba(0, 0, 0, 0.4)';
+  bimage.style.display = 'none';
+  bimage.src = '';
+	document.getElementById(au).pause();
+}
+
+function hasUserInteracted() {
+  return navigator.userActivation.hasBeenActive;
+}
+
+setInterval(() => {
+ if (hasUserInteracted()) {
+  esound.innerHTML = '';
+}
+}, 1);
+
+var msgs = Array(
+	'pu1',
+);
+
+function cpo() {
+	document.getElementById('msg').style.display = 'none';
+	document.getElementById(rr).style.display = 'none';
+}
+
+function showPu() {
+	document.getElementById('pu1c').style.display = 'none';
+	var rrr = Math.floor(Math.random()*msgs.length);
+	document.getElementById('msg').style.display = 'block';
+	rr = msgs[rrr];
+	document.getElementById(rr).style.display = 'block';
+}
+
+setInterval(() => {
+	showPu();
+}, Math.floor(Math.random()*240000) + 60000);
+
+function p1c() {
+	document.getElementById('msg').style.display = 'block';
+	document.getElementById(rr).style.display = 'none';
+	document.getElementById('pu1c').style.display = 'block';
+	balance.innerHTML = parseInt(balance.innerHTML) - 100;
+	save();
+}
+</script>
+
+</body>
+</html>

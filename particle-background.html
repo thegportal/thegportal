@@ -1,0 +1,110 @@
+<html>
+
+<link rel="stylesheet" href="style.css">
+<script src="e-key.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KL0TG9YEVW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2GLK05RC89');
+</script>
+
+<body id="body">
+
+<script>
+var th = localStorage.getItem('themes');
+th = parseInt(th);
+checkBG();
+
+function checkBG() {
+  if (th == 0) {
+    body.style.background = "linear-gradient(to right, #005eb5, #3d0075)";
+    } if (th == 1) {
+    body.style.background = "linear-gradient(to right, #ff0000, #910000)";
+  } if (th == 2) {
+    body.style.background = "#141414";
+  } if (th == 3) {
+    body.style.background = "linear-gradient(to right, #1bb000, #106900)";
+  } if (th == 4) {
+    body.style.background = "linear-gradient(to right, #db00d4, #780074)";
+  } if (th == 5) {
+    body.style.background = "linear-gradient(to right, #e6d602, #7a7200)";
+  }
+}
+</script>
+
+<style>
+hr {
+  width: 98.7%;
+  height: 4px;
+  border-radius: 2px;
+  border-width: 0;
+  z-index: 10;
+  position: relative;
+  background: linear-gradient(to right, #ff30ea, #f5ff30, #306bff);
+}
+
+.up {
+  position: relative;
+  bottom: 20px;
+}
+
+.fixed {
+  padding: 5;
+  text-align: center;
+  top: -10;
+  color: #ffa1a1;
+  background: #a60000;
+  z-index: 1;
+}
+
+#particles-js {
+    position: fixed;
+    margin: 0;
+    zoom: 100%;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+}
+
+.c {
+  z-index: 10;
+  position: relative;
+}
+
+.tc {
+  z-index: 10;
+  width: 70%;
+  position: relative;
+}
+</style>
+
+<title>Particle Play!</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap" rel="stylesheet">
+
+<center>
+<div id="particles-js">
+<script src=
+        "particles.js">
+    </script>
+    <script src=
+        "app.js">
+</script>
+</div>
+</center>
+<button class="c key" onclick="emergency()" style="position: absolute; right: 0;">E-Key</button>
+<!--Logo-->
+<div>
+<a class="logo c" href="index.html"><img src="GHub Logo 4 Simple Light.png" width="auto" height="5.7%"></a>
+</div>
+
+</body>
+
+</html>
