@@ -1,0 +1,93 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap" rel="stylesheet">
+
+<style>
+.text {
+  text-decoration: none;
+}
+</style>
+
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="e-key.js"></script>
+</head>
+
+<body>
+<button class="c key" onclick="emergency()" style="position: absolute; right: 0;">E-Key</button>
+<center>
+<a class="text" href="index.html"><p style="font-family: oxanium; color: #ffa1a1; font-size: 17;">&#128308;Important Info: Don't type/paste 'https://' before the website link. If you do that, it won't work. Also, a lot of websites won't work.	Click this text to go back home. &#128308;</p></a>
+</center>
+</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblock Websites</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px;
+        }
+        #controls {
+            padding: 20px;
+            background: #4287f5;
+            display: flex;
+            width: 35%;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            border-radius: 15px;
+        }
+        #embedArea {
+            flex-grow: 1;
+            display: none;
+            border-radius: 15px;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GLK05RC89"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2GLK05RC89');
+</script>
+
+<body>
+<center>
+    <div id="controls">
+        <input type="text" id="urlInput" style="border-radius: 5px; border: 0;" placeholder="URL (Example: myinstants.com)">
+        <button onclick="embedUrl()" style="border-radius: 5px; border: 0;">Unblock (a lot of websites won't work!)</button>
+    </div>
+</center>
+
+    <div id="embedArea"></div>
+
+    <script>
+        function embedUrl() {
+            const url = document.getElementById('urlInput').value;
+            if (url) {
+                const embedArea = document.getElementById('embedArea');
+                embedArea.innerHTML = `<embed src="https://${url}" frameborder="0" width="100%" height="100%" allowfullscreen></embed>`;
+                embedArea.style.display = "block";
+                document.getElementById('controls').style.display = "none";  // Hide the input form
+            } else {
+                alert("Please enter a valid URL.");
+            }
+        }
+    </script>
+</body>

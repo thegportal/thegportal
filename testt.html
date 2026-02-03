@@ -1,0 +1,83 @@
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="e-key.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GLK05RC89"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2GLK05RC89');
+</script>
+
+<title>Test</title>
+
+<!--Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div style="position: fixed; right: 0;">
+<button class="c key" onclick="emergency()" style="margin: 0;">E-Key</button>
+</div>
+<!--Logo-->
+<div>
+<a class="logo" href="index.html"><img src="GHub Logo 4 Simple Light.png" width="auto" height="5.7%"></a>
+</div>
+
+<hr>
+
+<!--Test-->
+<center>
+<div style="margin: 0; align-content: center; height: auto; background: rgba(0,0,0,0.4); width: 80%; padding: 6 0; border-radius: 10px;">
+<textarea id="input" style="width: 400; resize: none; border-radius: 5px; height: 20px; padding: 0 0; margin: 0;border: none; margin-bottom: 0; display: block;"></textarea>
+<button onclick="submit()" style="width: 100; border-radius: 5px; height: 20px; padding: 0 0; margin: 6; margin-bottom: 0; border: none; background: #7000a1; display: block;"><p style="font-family: oxanium; padding: 0 0; margin: 0; color: white;">Submit</p></button>
+</div>
+<hr>
+<div id="chance"></div>
+<div id="pcodes"></div>
+<hr>
+<div id="result"></div>
+<script>
+var passc;
+
+var bc = 0;
+
+var codes = Array(
+'pineapple',
+'watermelon',
+'apple',
+'kiwi',
+'orange',
+'banana',
+'grape',
+'starfruit',
+);
+
+document.getElementById("pcodes").innerHTML = 'Possible codes are: ' + codes.join(', ');
+
+passc = codes[Math.floor(Math.random()*codes.length)];
+
+document.getElementById('chance').innerHTML = '1 in ' + codes.length + ' chance';
+
+function submit() {
+  if (bc == 0) {
+    bc = bc + 1;
+    var a = document.getElementById('input');
+    var att = a.value;
+    if (att == passc) {
+      document.getElementById('result').innerHTML = 'Success! :)';
+      passc = codes[Math.floor(Math.random()*codes.length)];
+    } else {
+      document.getElementById('result').innerHTML = 'Fail! >:(';
+      passc = codes[Math.floor(Math.random()*codes.length)];
+    }
+  }
+}
+</script>
+</center>
+</body>

@@ -1,0 +1,49 @@
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<script src="e-key.js"></script>
+
+<title>That's Not My Neighbour</title>
+
+<!--Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div style="position: fixed; right: 0;">
+<button class="c key" onclick="emergency()" style="margin: 0;">E-Key</button>
+</div>
+<!--Logo-->
+<div>
+<a class="logo" href="index.html"><img src="GHub Logo 4 Simple Light.png" width="auto" height="5.7%"></a>
+</div>
+
+<!--G-->
+<center>
+<button style="margin: 2px;" class="btn" onclick="openWindow('https://thatsnotmyneighbor.online/v11/')">Open Version 1</button>
+<button style="margin: 2px;" class="btn" onclick="openWindow('https://thatsnotmy-neighbor.io/game/thats-not-my-neighbor/')">Open Version 2</button>
+<br>
+<button style="margin: 2px;" class="btn" onclick="openIW('https://thatsnotmyneighbor.online/v11/', '')">V1 in about:blank (May Not Work!)</button>
+<button style="margin: 2px;" class="btn" onclick="openIW('https://thatsnotmy-neighbor.io/game/thats-not-my-neighbor/', '')">V2 in about:blank (May Not Work!)</button>
+<br>
+<button style="margin: 2px;" class="btn" onclick="openIW('https://thatsnotmyneighbor.online/v11/', '/')">V1 in '/' (May Not Work!)</button>
+<button style="margin: 2px;" class="btn" onclick="openIW('https://thatsnotmy-neighbor.io/game/thats-not-my-neighbor/', '/')">V2 in '/' (May Not Work!)</button>
+</center>
+<script>
+
+function openWindow(url) {
+  // Create the window
+  var win = window.open(url, '_blank', 'width=9000,height=9000');
+}
+
+function openIW(url, location) {
+  // Create the window
+  var win = window.open(location, '_blank', 'width=9000,height=9000');
+  win.document.write(`<object data="${url}" style="left: 0; top: 0; position: absolute; width: 100vw; height: 100vh;">
+  </object>`);
+}
+
+</script>
+</body>
