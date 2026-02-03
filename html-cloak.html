@@ -1,0 +1,60 @@
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="e-key.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GLK05RC89"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2GLK05RC89');
+</script>
+
+<title>HTML Code Cloaker</title>
+
+<!--Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<button class="c key" onclick="emergency()" style="position: fixed; right: 0;">E-Key</button>
+<!--Logo-->
+<div>
+<a class="logo" href="index.html"><img src="GHub Logo 4 Simple Light.png" width="auto" height="5.7%"></a>
+</div>
+
+<!--Stuff-->
+<center>
+<div>
+<textarea spellcheck="false" id="html" placeholder="HTML/CSS/JavaScript code goes here" style="border-radius: 7px; border: none; resize: none; margin-bottom: 6; width: 100%; height: 80%;"></textarea>
+</div>
+<button class="button btn" onclick="cloakHTML()" style="font-family: oxanium; width: 300; height: 30; margin: 6; margin-top: 0;">Cloak in an about:blank tab</button>
+<script>
+var c = document.getElementById("html");
+var code = c.value;
+function cloakHTML() {
+  var c = document.getElementById("html");
+  var code = c.value;
+  var html = window.open();
+  html.document.write(code);
+}
+</script>
+
+<button class="btn button c" style=" font-family: oxanium; width: 300; height: 30; margin: 6; margin-top: 0;" onclick="urlNo()">Cloak in a No URL Tab</button>
+
+<script>
+function urlNo() {
+  var c = document.getElementById("html");
+  var code = c.value;
+  var c = document.getElementById("html");
+  var code = c.value;
+  var n = window.open('/');
+  n.document.write(code);
+}
+</script>
+</center>
+</body>

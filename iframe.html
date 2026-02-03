@@ -1,0 +1,34 @@
+<h1>GH4ng</h1>
+<button onclick="createi()" id="createBtn">Create Amount iframes</button>
+<p>Amount of iframes:</p>
+<p id="iamount">Amount</p>
+<input type="range" min="1" max="5000" value="50" class="slider" id="myRange" style="width: 100%;">
+
+<script>
+var amount;
+
+setInterval(() => {
+  amount = document.getElementById('myRange');
+  document.getElementById('iamount').innerHTML = amount.value;
+  if (amount.value != 1) {
+    document.getElementById('createBtn').innerHTML = 'Create ' + amount.value + ' iframes';
+  } else {
+    document.getElementById('createBtn').innerHTML = 'Create ' + amount.value + ' iframe';
+  }
+}, 1);
+
+function createi() {
+  for (var i = 0; i < amount.value; i++) {
+  createi1();
+  }
+}
+
+var iSrc = 'https://';
+
+function createi1() {
+  var win = window.open("", "PopupWindow", "width=500,height=500");
+  var melement = win.document.createElement('iframe');
+  melement.src = iSrc;
+  win.document.body.appendChild(melement);
+}
+</script>

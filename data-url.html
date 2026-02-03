@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data URL Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: oxanium;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #005eb5, #3d0075);
+            color: white;
+            max-height: 94.3vh;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(0,0,0,0.5);
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background: linear-gradient(to right, #1787e3, #ac17e3);
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #copyButton {
+            margin-top: 10px;
+        }
+        .data-url-container {
+            max-width: 100%; /* Allow the container to grow with its parent */
+            overflow-x: auto; /* Enable horizontal scrolling if needed */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 style="margin: 0;">Data URL Generator :)</h1>
+    <p>With this tool, you can generate data links that execute the HTML, CSS, & JavaScript code that you write. These data links will be unblocked at most schools, but some schools might have them blocked.</p>
+    <p>Enter your HTML code below:</p>
+    <textarea id="htmlCode" oninput="generateDataUrl()"></textarea>
+    <!-- Added a container for the data URL -->
+    <div class="data-url-container">
+        <p id="dataUrl" class="data-url"></p>
+    </div>
+    <button id="copyButton" onclick="copyToClipboard()" style="font-family: oxanium" disabled>Copy to Clipboard</button>
+</div>
+
+<center>
+<div class="container">
+<p>This was originally made by <a href="https://github.com/Blobby-Boi" target="_blank" style="color: #2f99d6">Blobby Boi</a>, you should check him out! :)</p>
+</div>
+</center>
+    <script>
+    function generateDataUrl() {
+        var htmlCode = document.getElementById('htmlCode').value;
+        var encodedHtml = encodeURIComponent(htmlCode);
+        var dataUrl = 'data:text/html;charset=utf-8,' + encodedHtml;
+        document.getElementById('dataUrl').innerText = dataUrl;
+        // Ensure copy button is enabled after generating data URL
+        document.getElementById('copyButton').disabled = false;
+    }
+
+    function copyToClipboard() {
+        var dataUrl = document.getElementById('dataUrl').innerText;
+        var tempInput = document.createElement('input');
+        tempInput.value = dataUrl;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempInput);
+        alert('Data URL copied to clipboard!');
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1556 @@
+<html>
+
+<!--
+
+JJJJJJJJ EEEEEEEE RRRRRR.
+   JJ    EE       RR   :RR
+   JJ    EEEEEE   RRRRRR*
+  .JJ    EE       RR   *RR
+JJJJ*    EEEEEEEE RR    RR
+
+EEEEEEEE MM    MM YY    YY
+EE       MMM..MMM YY.  .YY
+EEEEEE   MM*MM*MM  *YYYY*
+EE       MM    MM    YY
+EEEEEEEE MM    MM    YY
+
+ ()  ()
+__    __
+\ \__/ /
+ \____/
+
+https://thegportal.net
+
+:)
+
+-->
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-10F80HD0WC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-10F80HD0WC');
+</script>
+
+<meta charset="UTF-8">
+<meta name="description" content="Play over 200+ games in school with GHub!">
+<meta name="keywords" content="games, school, fun, technology, ghub, theghub, thegportal">
+<meta name="author" content="Jeremy Powell">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="e-key.js"></script>
+
+<style>
+.tbtn {
+  height: 25px;
+  width: 100px;
+  display: inline-block;
+  position: relative;
+  padding: 6 3;
+  margin: 0;
+  top: 0;
+  border-radius: 15px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  font-family: oxanium;
+  font-size: 12;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+}
+
+.tbtn:hover {
+  width: 120px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  border-radius: 25px 5px;
+  transition: 0.3s;
+}
+
+@property --myColor1 {
+  syntax: '<color>';
+  initial-value: #005eb5;
+  inherits: false;
+}
+
+@property --myColor2 {
+  syntax: '<color>';
+  initial-value: #3d0075;
+  inherits: false;
+}
+
+.sbn {
+  background: linear-gradient(to right, var(--myColor1), var(--myColor2));
+  border-radius: 15px;
+  width: 180px;
+  height: 30px;
+  border: 2px solid black;
+  color: white;
+  transition: --myColor1 0.7s, --myColor2 0.7s;
+}
+
+.sbn:hover {  
+  --myColor1: #0082fc;
+  --myColor2: #6900c9;
+  cursor: pointer;
+}
+
+.BGPre {
+  cursor: default;
+  border-radius: 15px;
+  display: inline-block;
+  border: 2px solid black;
+  border-color: white;
+  margin: 5;
+  width: 300;
+  height: 110;
+  transform: scale(1.0);
+  transition: 0.4s;
+}
+
+.BGPre:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+.TextPre {
+  padding: 40 0;
+  margin: 0;
+  text-align: center;
+  font-family: oxanium;
+  font-size: 25;
+}
+
+.slink {
+  color: yellow;
+  text-shadow: 0 0 10px yellow;
+  transition: 0.5s;
+}
+.slink:hover {
+  color: white;
+  text-shadow: 0 0 10px white;
+  transition: 0.5s;
+}
+
+.v2btn {
+  position: fixed;
+  bottom: 8px;
+  left: 8px;
+  width: 150px;
+  height: 40px;
+  z-index: 99;
+  background: linear-gradient(to bottom, #4d3e5c, #2b2036), #2b2036;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+  border: 2px solid white;
+  color: white;
+  font-family: oxanium;
+  cursor: pointer;
+  transition: 0.3s;
+} .v2btn:hover {
+  background: #643b8a;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 1.0);
+  transition: 0.3s;
+}
+
+a {
+  color: yellow;
+  text-decoration: underline;
+}
+
+#ipban {
+  background: #222;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  display: none;
+  position: fixed;
+}
+</style>
+
+<title>Games!</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="body">
+
+<div id="pframe" style="display: block;">
+<center>
+<div id="particles-js">
+<script src=
+        "particles.js">
+    </script>
+    <script src=
+        "app.js">
+</script>
+</div>
+</center>
+</div>
+
+<!--Banner Before EKey-->
+
+<div id="ipban" class="c">
+</div>
+
+<button class="c key" onclick="emergency()" style="position: fixed; right: 0;">E-Key</button>
+
+<a href="https://thegportalv2.neocities.org/"><button class="v2btn">GHub v2</button></a>
+
+<!--Logo-->
+<a class="logo c tbn" href="index.html"><img src="GHub Logo 4 Simple Light.png" width="auto" height="5.7%" style="display: inline-block; z-index: 99;"></a>
+
+<center>
+<img class="c" src="GHub Logo 4.svg" width="473.9466px" height="184.993px" style="margin-top: 6; border-radius: 30px; z-index: 9;">
+
+<!--Special message-->
+<div class="c" style="height: auto; width: 475; border-radius: 15px; text-align: center; margin: 6; margin-left: 0; margin-right: 0; bottom: 16px; border: 2px solid black; border-color: white; z-index: 999; background: rgba(0, 0, 0, 0.7);">
+<p class="tc" style="color: white; width: 100%; font-size: 18; padding: 0 0; margin: auto; width: 95%;" id="rmessage">&#8192;</p>
+</div>
+
+<div class="c" style="height: auto; width: 65%; border-radius: 15px; text-align: center; margin: 6; margin-left: 0; margin-right: 0; bottom: 16px; border: 2px solid black; border-color: white; z-index: 999; background: rgba(0, 0, 0, 0.7);">
+<p class="tc" style="color: white; width: 100%; font-size: 18; padding: 0 0; margin: auto; width: 95%;">Make sure to join the discord! <a href="https://discord.gg/rAwrBrA3yT" target="_blank" style="text-decoration: underline; color: yellow;">https://discord.gg/rAwrBrA3yT</a> (or https://discord.thegportal.net)</p>
+</div>
+
+<div class="c" style="height: auto; width: 250; border-radius: 15px; text-align: center; margin: 6; margin-left: 0; margin-right: 0; margin-top: -16px; bottom: 0px; border: 2px solid black; border-color: white; background: rgba(0, 0, 0, 0.7);">
+<div id="time" style="display: inline-block"></div>
+</div>
+
+<script>
+var delay = 1000;
+var now = new Date();
+time.innerHTML = now.toLocaleTimeString();
+
+function clock() {
+  var now = new Date();
+  time.innerHTML = now.toLocaleTimeString();
+}
+
+setInterval(clock, 1000);
+</script>
+
+<!--Splash Message-->
+<script src="https://thegportal.neocities.org/rmessage.js">
+</script>
+
+<!--Rickroll Script-->
+<script>
+  const audio = new Audio("https://files.catbox.moe/v5t548.mp3");
+  const playButton = document.getElementById("playButton");
+
+  playButton.addEventListener("click", () => {
+    audio.play();
+  });
+</script>
+</center>
+
+<!--Bookmarks-->
+<center>
+
+<div class="c sect" style="margin: 6; padding: 6 0; width: 88vw; margin-bottom: 0;">
+<div>
+<a class="hyperlink link txt c" href="#partner" style="width: auto; height: 25;"><p style="font-family: oxanium; margin: auto; padding: 0 6;">Partners</p></a>
+<a class="hyperlink link txt c" href="#social" style="width: auto; height: 25;"><p style="font-family: oxanium; margin: auto; padding: 0 6;">Socials</p></a>
+<a class="hyperlink link txt c" href="#soundb" style="width: auto; height: 25;"><p style="font-family: oxanium; margin: auto; padding: 0 6;">Soundboard</p></a>
+<a class="hyperlink link txt c" href="#olinks" style="width: auto; height: 25;"><p style="font-family: oxanium; margin: auto; padding: 0 6;">Other Links/Tools</p></a>
+<a class="hyperlink link txt c" href="#ccontent" style="width: auto; height: 25;"><p style="font-family: oxanium; margin: auto; padding: 0 6;">Custom Content</p></a>
+<a class="hyperlink link txt c" href="#fgame" style="width: auto; height: 25;"><p style="font-family: oxanium; margin: auto; padding: 0 6;">Featured Games</p></a>
+<a class="hyperlink link txt c" href="#agame" style="width: auto; height: 25;"><p style="font-family: oxanium; margin: auto; padding: 0 6;">All Games</p></a>
+</div>
+<div style="margin-top: 3;">
+<a href="jversion.html" style="text-decoration: none;"><button class="c tbtn">JS Version</button></a>
+<a href="light.html" style="text-decoration: none;"><button class="c tbtn">Light Version</button></a>
+<a href="#partner" style="text-decoration: none;"><button class="c tbtn">Partners</button></a>
+<a href="blog.html" style="text-decoration: none; display: inline-block;"><button class="c tbtn">My blog! (<div style="color: yellow; display: inline-block; text-shadow: 0 0 7px rgba(239, 245, 81, 1.0);">8/25</div>)</button></a>
+<a href="links.html" style="text-decoration: none;"><button class="c tbtn">More Links</button></a>
+<a href="https://drive.google.com/drive/folders/15EJVet1Ex9Iyjlahs_oQANaOlvlJwngr?usp=drive_link" style="text-decoration: none;"><button class="c tbtn">Clone GHub</button></a>
+<a href="#mygames" style="text-decoration: none;"><button class="c tbtn">GHub's Games!</button></a>
+<a href="https://docs.google.com/spreadsheets/d/1nBH6O1unjBfU5xta4Arz_dRu2kc2LfWXr2wOa5Hbyiw/edit?usp=sharing" target="_blank" style="text-decoration: none;"><button class="c tbtn">Analytics</button></a>
+</div>
+
+<!--GoGuardian for Best Experience-->
+<p class="tc" style="color: white; margin: 0; width: 100%; padding: 6 0; font-size: 13; margin-bottom: -6;">GHub was made for schools that use GoGuardian. If you use something other than GoGuardian, it's fine, but your school needs to use GoGuardian for the best experience. :)</p>
+</div>
+
+<!--Forms/Advertisement-->
+<div class="c sect" style="padding: 6 0; margin: 6;">
+<p style="font-family: tahoma; font-size: 40; margin: 0;">gOS</p>
+<p class="tc" style="color: white; margin: 0; width: 100%; padding: 6 0;">gOS is a new browser-based "OS" that I'm building!</p>
+<a href="https://gos.neocities.org/" style="text-decoration: none;"><button class="c tbtn" style="width: 200px;">Go to gOS</button></a>
+<a href="Retr30-OS-Preview.html" style="text-decoration: none;"><button class="c tbtn" style="width: 200px;">Go to the preview of Retr30 OS</button></a>
+</div>
+</center>
+
+<!--Amount of Games-->
+<center>
+<p id="gameAmount" class="tc" style="color: white; font-size: 30; margin: 10; width: 191;">237 Games! :)</p>
+</center>
+
+<center>
+<button class="c sbn" onclick="displayThemes()" style="font-family: oxanium;">Themes</button>
+
+<center>
+<div id="themeDisplay" style="display: none; margin: 6; z-index: 999999; border: 2px solid black; border-color: white; width: auto; width: 90%; border-radius: 15px; left: 50%; transform: translate(-50%); background: rgba(0,0,0,0.7); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); padding: 3 0; backdrop-filter: blur(4px);">
+
+<div onclick="changeTheme('0')" class="BGPre" style="background: linear-gradient(to right, #005eb5, #3d0075);">
+<p class="TextPre">Theme 1 (Default)</p>
+</div>
+
+<div onclick="changeTheme('1')" class="BGPre" style="background: linear-gradient(to right, #ff0000, #910000);">
+<p class="TextPre">Theme 2</p>
+</div>
+
+<div onclick="changeTheme('2')" class="BGPre" style="background: #141414;">
+<p class="TextPre">Theme 3</p>
+</div>
+
+<div onclick="changeTheme('3')" class="BGPre" style="background: linear-gradient(to right, #1bb000, #106900);">
+<p class="TextPre">Theme 4</p>
+</div>
+
+<div onclick="changeTheme('4')" class="BGPre" style="background: linear-gradient(to right, #db00d4, #780074);">
+<p class="TextPre">Theme 5</p>
+</div>
+
+<div onclick="changeTheme('5')" class="BGPre" style="background: linear-gradient(to right, #e6d602, #7a7200);">
+<p class="TextPre">Theme 6</p>
+</div>
+
+<br>
+
+<button onclick="togglep()" id="ptoggle" class="btn" style="font-family: oxanium; width: 230; color: white; background: gray;">Toggle Particles</button>
+
+</div>
+</center>
+
+<script>
+var qw = 0;
+
+function displayThemes() {
+  qw = qw + 1;
+  if (qw == 0) {
+    document.getElementById('themeDisplay').style.display = 'none';
+  } if (qw == 1) {
+    document.getElementById('themeDisplay').style.display = 'block';
+    document.getElementById('themeDisplay').style.position = 'absolute';
+  } if (qw > 1) {
+    qw = 0;
+    document.getElementById('themeDisplay').style.display = 'none';
+  }
+}
+
+function changeTheme(theme) {
+  th = theme;
+  checkBG();
+  localStorage.setItem('themes', th);
+}
+
+var th = localStorage.getItem('themes');
+th = parseInt(th);
+checkBG();
+
+function checkBG() {
+  if (th == 0) {
+    body.style.background = "linear-gradient(to right, #005eb5, #3d0075)";
+    } if (th == 1) {
+    body.style.background = "linear-gradient(to right, #ff0000, #910000)";
+  } if (th == 2) {
+    body.style.background = "#141414";
+  } if (th == 3) {
+    body.style.background = "linear-gradient(to right, #1bb000, #106900)";
+  } if (th == 4) {
+    body.style.background = "linear-gradient(to right, #db00d4, #780074)";
+  } if (th == 5) {
+    body.style.background = "linear-gradient(to right, #e6d602, #7a7200)";
+  }
+}
+
+var tp = localStorage.getItem('particlet');
+tp = parseInt(tp);
+checkp();
+
+function togglep() {
+  tp = tp + 1;
+  localStorage.setItem('particlet', tp);
+  checkp();
+}
+
+if (Number.isNaN(tp) || tp == null) {
+  tp = 0;
+  localStorage.setItem('particlet', tp);
+  checkp();
+}
+
+function checkp() {
+  if (tp == 0) {
+    document.getElementById('pframe').style.display = "block";
+    document.getElementById('ptoggle').innerHTML = "Particles are enabled";
+    document.getElementById('ptoggle').style.background = "green";
+  } if (tp == 1) {
+    document.getElementById('pframe').style.display = "none";
+    document.getElementById('ptoggle').innerHTML = "Particles are disabled";
+    document.getElementById('ptoggle').style.background = "red";
+  } if (tp > 1) {
+    tp = 0;
+    checkp();
+  }
+}
+</script>
+</center>
+
+<hr>
+
+<!--Counter-->
+<center>
+<embed class="c" src="//incr.easrng.net/badge?key=thegportal876" style="background: white; border-radius: 5px; display: block;" title="increment badge" width="88" height="31" frameborder="0">
+<a class="c" href="https://info.flagcounter.com/sOkp"><img src="https://s05.flagcounter.com/count2/sOkp/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_18/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0" height="0" width="0" style="border-radius: 7px;"></a>
+</center>
+
+<hr>
+
+<!--What's New?-->
+<center>
+<center>
+<button onclick="toggleWN()" class="c collapsible"><p style="font-family: oxanium;">What's New?</p></button>
+<center>
+<div style="margin: 10; display: none;" id="wnew">
+<div class="c content">
+<p class="c" style="font-color: white; margin: 0;">GHub's last major update was on August 26, 2025 (10:23 CST)</p>
+
+<p class="c" style="font-color: white;">&#8226;Added These Things:</p>
+<div class="linkh c"><a class="hyperlink link txt c" href="eaglercraft-1-11.html" target="_blank"><p>Eaglercraft (1.11.2)</p></a></div>
+<div class="linkh c"><a class="hyperlink link txt c" href="sandboxels.html" target="_blank"><p>Sandboxels</p></a></div>
+
+</div>
+</div>
+
+</center>
+
+<script>
+var sn = 0;
+
+function toggleWN() {
+  sn++
+  if (sn == 1) {
+    document.getElementById('wnew').style.display = 'block';
+  } if (sn > 1) {
+    sn = 0;
+    document.getElementById('wnew').style.display = 'none';
+  }
+}
+</script>
+</center>
+
+<hr>
+
+<a href="https://ubgameunion.neocities.org/"><img class="c" src="https://ubgameunion.neocities.org/UBGU%20Member.svg" height="150" width="auto"></a>
+
+<hr>
+
+<!--Version Buttons-->
+
+<div class="c sect">
+<center>
+<button class="btn button c" onclick="window.open('https://sites.google.com/view/perrymissouri/', '_blank')" style="width: 325; margin: 6;"><p style="font-family: oxanium;">Play on the Google Sites version</p></button>
+<button class="btn button c" onclick="window.open('https://thegportal.neocities.org', '_blank')" style="width: 325; margin: 6;"><p style="font-family: oxanium;">Launch Neocities Version</p></button>
+<button class="btn button c" onclick="window.open('https://thegportal.nekoweb.org', '_blank')" style="width: 325; margin: 6;"><p style="font-family: oxanium;">Launch Nekoweb Version</p></button>
+</center>
+</div>
+<hr style="z-index: 0;">
+
+<button class="btn button c" onclick="window.open('https://docs.google.com/spreadsheets/d/1nBH6O1unjBfU5xta4Arz_dRu2kc2LfWXr2wOa5Hbyiw/edit?usp=sharing', '_blank')" style="width: 325; margin: 6;"><p style="font-family: oxanium;">GHub v1 Analytics</p></button>
+
+<button class="btn button c" onclick="window.open('https://docs.google.com/spreadsheets/d/1YniXJX6loEp0DFVfILeMMpeHPquXDkp4IUtHBOGlYTA/edit?usp=sharing', '_blank')" style="width: 325; margin: 6;"><p style="font-family: oxanium;">GHub v2 Analytics</p></button>
+
+<hr>
+
+<button class="btn button c" onclick="openVersions()" style="width: 400; margin: 6; margin-top: 0;"><p style="font-family: oxanium;">Versions of GHub (about:blank version, etc.)</p></button>
+</center>
+
+<script>
+var oo = 0;
+
+function openVersions() {
+  if (oo < 2) {
+    versionss.style.display = 'block';
+    oo = oo + 1;
+  } if (oo > 1) {
+    versionss.style.display = 'none';
+    oo = 0;
+  }
+}
+</script>
+
+<div id="versionss" style="display: none;">
+
+<!--about:blank Version-->
+<center>
+<div class="c sect" style="margin-bottom: 6;">
+<center>
+<p class="tc" style="color: white; margin: 0; margin-bottom: -6; width: 95%; padding: 6 0;">When you're on the blank version, teachers can't see your screen!</p>
+</center>
+
+<center>
+	<button class="btn button c" style="width: 325; margin: 6;" onclick="openGame()"><p style="font-family: oxanium">Launch in about:blank</p></button>
+	<script>
+		function openGame() {
+var win = window.open()
+var url = "https://thegportal.neocities.org/"
+var object = win.document.createElement('object')
+object.style.width = "100vw";
+object.style.height = "100vh";
+object.style.margin = "0";
+object.style.overflow = "hidden";
+object.style.top = "0";
+object.style.left = "0";
+object.style.position = "absolute";
+object.data = url
+win.document.body.appendChild(object)
+}
+	</script>
+
+<button class="btn button c" onclick="window.open('https://drive.google.com/file/d/1qw2gYZNnfGBzK1HuNPDVJN1KkTDGfQ6k/view?usp=sharing', '_blank')" style="width: 325; margin: 6;"><p style="font-family: oxanium;">Download Blank Version</p></button>
+
+<button class="btn button c" onclick="openWindow('https://thegportal.neocities.org/')" style="width: 325; margin: 6;"><p style="font-family: oxanium;">Open in a New Window</p></button>
+<script>
+function openWindow(url) {
+    // Create the window
+    var win = window.open('about:blank', '_blank', 'width=9000,height=9000');
+    
+    // Add GHub to the new window
+    win.document.write(`
+        <object 
+            data="${url}" 
+            style="width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; top:0; left:0; position:absolute;" 
+            allowfullscreen></object>
+    `);
+}
+</script>
+
+<hr class="dis" id="customab">
+
+<p class="tc" style="color: white; margin: 6; margin-bottom: 0; width: 95%;">Launch GHub in a custom about:blank URL or a random about:blank URL</p>
+
+<div style="margin: 0;">
+<textarea id="tarea" class="c" spellcheck="false" type="text" autocomplete="off" placeholder="Enter the id of the custom about:blank URL" style="border-radius: 7px; border: none; width: 340; height: 20; resize: none; display: inline; margin: 6; margin-bottom: 0;"></textarea>
+<textarea id="titlearea" class="c" spellcheck="false" type="text" autocomplete="off" placeholder="Enter the title (Optional)" style="border-radius: 7px; border: none; width: 340; height: 20; resize: none; display: inline; margin: 6; margin-bottom: 0;"></textarea>
+<div style="margin: 0; margin-bottom: 6;">
+
+<button class="btn button c" style="width: 340; margin: 6;" onclick="openBlock()"><p style="font-family: oxanium">Launch Custom about:blank</p></button>
+
+<button class="btn button c" style="width: 340; margin: 6;" onclick="openRandom()"><p style="font-family: oxanium">Launch Random about:blank</p></button>
+
+<script>
+function openBlock() {
+  var txt2 = document.getElementById("tarea");
+  var ti = document.getElementById("titlearea");
+  var title = ti.value
+  var u = txt2.value;
+  var fu = 'about:blank#' + u;
+  window.alert('You are about to launch GHub in ' + fu)
+  var block = window.open('about:blank#' + u);
+  block.document.write(`<frameset><frame src="https://thegportal.neocities.org/"></frameset>`);
+  if (title != "") {
+    block.document.title = title;
+  }
+}
+
+function openRandom() {
+  var r = [Math.floor(Math.random()*10000000000)];
+  var rti = document.getElementById("titlearea");
+  var rtitle = rti.value
+  var fru = 'about:blank#' + r;
+  window.alert('You are about to launch GHub in ' + fru)
+  var ran = window.open('about:blank#' + r);
+  ran.document.write(`<frameset><frame src="https://thegportal.neocities.org/"></frameset>`);
+  if (rtitle != "") {
+    ran.document.title = rtitle;
+  }
+}
+</script>
+
+<hr class="dis" id="nourl">
+
+<p class="tc" style="color: white; margin: 6; margin-bottom: 0; width: 95%;">Launch GHub in a tab with no URL</p>
+<p class="tc" style="color: white; margin: 0; margin-bottom: 6; width: 95%;">(The address bar will say 'about:blank' because there's no other URL to display)</p>
+
+<button class="btn button c" style="width: 90%; margin: 6; margin-bottom: 0; margin-top: 0;" onclick="urlNo()"><p style="font-family: oxanium">Launch in  a No URL Tab</p></button>
+
+<script>
+function urlNo() {
+  var n = window.open('/');
+  n.document.write(`<frameset><frame src="https://thegportal.neocities.org/"></frameset>`);
+}
+</script>
+
+<p class="tc" style="color: white; margin: 6; width: 95%;">Downloading the file is better for stricter filters; I recommend downloading it. :)</p>
+
+<button class="btn button c" onclick="window.open('https://drive.google.com/file/d/1_4UW1VBzmPYBHeY2_6Ss72xlDMn6zAS_/view?usp=sharing')" target="_blank" style="width: 90%;"><p style="font-family: oxanium;">Download No URL Version</p></button>
+
+<hr class="dis">
+
+<center>
+<p class="tc" style="color: white; margin: 0; margin-top: 6; width: 95%; padding: 0 0;">Opening the version below will automatically open GHub in an about:blank tab after opening the file, this will bypass GoGuardian Teacher blacklisting! On the automatic window version, it opens GHub in a new window. (Teachers won't be able to block these with GoGuardian)</p>
+</center>
+
+<center>
+<p class="tc" style="color: white; margin: 0; margin-top: 6; width: 95%; padding: 0 0;">(Tip: If the files app is blocked, you can use 'ctrl+o' to open the file!)</p>
+</center>
+
+<button class="btn button c" onclick="window.open('https://drive.google.com/file/d/1QIJX72kz_fCA9Ziwheswqm5f_qnJUdP3/view?usp=sharing')" target="_blank" style="width: 90%; margin: 6;"><p style="font-family: oxanium;">Download Automatic Blank Version</p></button>
+<button class="btn button c" onclick="window.open('https://drive.google.com/file/d/1zCLvczXCduI1d6who2So6SVO9hxYy3kR/view?usp=sharing')" target="_blank" style="width: 90%; margin: 6;"><p style="font-family: oxanium;">Download Automatic Window Version</p></button>
+
+<center>
+<p class="tc" style="margin: 0; width: 100%; padding: 6 0;">Bookmarklet version</p>
+</center>
+
+<center>
+<div style="width: 100%; height: 20;">
+<textarea class="c" type="text" autocomplete="off" style="border-radius: 15px; border: none; width: 100%; height: 100%; resize: none;">javascript:(function(){x = window.open(); x.document.write(`<frameset><frame src="https://thegportal.neocities.org/"></frameset>`);})();</textarea>
+</div>
+</center>
+</center>
+</div>
+</center>
+
+<!--Blob Version-->
+<center>
+<div class="c sect" style="margin-bottom: 6">
+<center>
+<p class="tc" style="margin: 6; width: 95%; padding: 6 0;">Warning: Progress won't sync between the blank version & the blob version!</p>
+  <button class="btn button c" id="openBlobBtn" style="width: 90%; margin-bottom: 6;"><p style="font-family: oxanium;">Launch in a blob tab</p></button>
+</center>
+  <script>
+    document.getElementById('openBlobBtn').addEventListener('click', () => {
+      const embeddedWebsiteHTML = `
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Games!</title>
+          <style>
+            body {
+              margin: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100vh;
+              background-color: #f4f4f4;
+            }
+            object {
+              width: 100vw;
+              height: 100vh;
+              border: none;
+              margin: 0;
+            }
+          </style>
+        </head>
+        <body>
+          <object src="https://thegportal.neocities.org"></object>
+        </body>
+        </html>
+      `;
+
+      // Create a Blob containing the HTML
+      const blob = new Blob([embeddedWebsiteHTML], { type: 'text/html' });
+      
+      // Create a URL for the Blob
+      const blobURL = URL.createObjectURL(blob);
+      
+      // Open the Blob URL in a new tab
+      window.open(blobURL, '_blank');
+
+
+    });
+  </script>
+</div>
+</center>
+
+<hr>
+
+<!--Data Version-->
+<center>
+<div class="c sect" style="display: inline-block; width: 450; margin-bottom: 6;">
+<center>
+<p class="tc" style="margin: 0; width: 100%; padding: 6 0;">Link for data version</p>
+</center>
+
+<center>
+<div style="width: 100%; height: 65;">
+<textarea class="c" spellcheck="false" type="text" autocomplete="off" style="border-radius: 15px; border: none; width: 100%; height: 100%; resize: none;">data:text/html;charset=utf-8,%3C!DOCTYPE%20html%3E%0A%3Chtml%3E%0A%3Chead%3E%0A%3Ctitle%3D%22GHub%22%3E%0A%3Cstyle%3E%0Abody%20%7B%0Amin-width%3A%20100vw%3B%0Amin-height%3A%20100vh%3B%0Amargin%3A%200%3B%0A%7D%0A%3C%2Fstyle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cembed%20src%3D%22https%3A%2F%2Fthegportal.neocities.org%22%20height%3D%22100%25%22%20width%3D%22100%25%22%20style%3D%22position%3A%20absolute%3B%22%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E</textarea>
+</div>
+</center>
+</div>
+
+<div class="c sect" style="display: inline-block; width: 450;">
+<center>
+<p class="tc" style="margin: 0; width: 100%; padding: 6 0;">Bookmarklet Version</p>
+</center>
+
+<center>
+<div style="width: 100%; height: 65;">
+<textarea class="c" spellcheck="false" type="text" autocomplete="off" style="border-radius: 15px; border: none; width: 100%; height: 100%; resize: none;">javascript:(function() {var eltIF = document.createElement('object');eltIF.setAttribute("data", "https://thegportal.neocities.org");var url = ("https://thegportal.neocities.org");eltIF.style.border = 'none';eltIF.style.width = '100vw';eltIF.style.height = '90vh';eltIF.style.margin = '0';eltIF.src = url;document.body.appendChild(eltIF);eltIF.scrollIntoView();})();</textarea>
+</div>
+</center>
+</div>
+</center>
+</div>
+
+<hr style="margin-top: 2;">
+
+<!--Removed-->
+
+<!--GHub Button-->
+<center>
+<div class="c sect">
+<center>
+<p class="tc" style="margin: 0; width: 100%; padding: 6 0;">Embed the GHub button into your website!</p>
+</center>
+
+<center>
+<div>
+<a class="c" href="https://thegportal.neocities.org" target="_blank" title="Play Games on GHub!"><img alt="Site button for GHub" width="88" height="31" src="gbutton.png"></a>
+</div>
+
+<div style="width: 100%; height: 35;">
+<textarea class="c" spellcheck="false" type="text" autocomplete="off" style="border-radius: 15px; border: none; width: 100%; height: 100%; resize: none;">&lt;a href="https://thegportal.neocities.org" target="_blank" title="Play Games on GHub!"&gt;&lt;img alt="Site button for GHub" width="88" height="31" src="https://thegportal.neocities.org/gbutton.png"&gt;&lt;/a&gt;</textarea>
+</div>
+</center>
+</div>
+</center>
+
+<hr>
+
+<center>
+<div class="c sect" style="width: 90%">
+<center>
+
+<center>
+<p class="tc" style="margin: 0; margin-bottom: -6; width: 100%; padding: 6 0;">Embed GHub into your website! (Size it correctly!)</p>
+</center>
+
+<button type="button" class="c co" style="margin: 6;"><p style="font-family: oxanium;">Preview</p></button>
+<div class="c coco" style="z-index: 12;">
+<center>
+<div>
+<center>
+<object class="c" data="https://thegportal.neocities.org" height="85%" width="100%" style="border-radius: 5px; background: rgba(0,0,0,0.5);"></object>
+</center>
+</div>
+
+</center>
+
+<script>
+var coll = document.getElementsByClassName("co");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var coco = this.nextElementSibling;
+    if (coco.style.display === "block") {
+      coco.style.display = "none";
+    } else {
+      coco.style.display = "block";
+    }
+  });
+}
+</script>
+</div>
+</center>
+
+<center>
+
+<hr class="dis">
+
+<div style="width: 100%; height: 20;">
+<textarea class="c" spellcheck="false" type="text" autocomplete="off" style="border-radius: 15px; border: none; width: 100%; height: 100%; resize: none;">&lt;iframe src="https://thegportal.neocities.org" height="100%" width="100%"&gt;&lt;/iframe&gt;</textarea>
+</div>
+
+<hr class="dis">
+
+<div style="width: 100%; height: 20;">
+<textarea class="c" spellcheck="false" type="text" autocomplete="off" style="border-radius: 15px; border: none; width: 100%; height: 100%; resize: none;">&lt;embed src="https://thegportal.neocities.org" height="100%" width="100%"&gt;</textarea>
+</div>
+
+<hr class="dis">
+
+<div style="width: 100%; height: 20;">
+<textarea class="c" spellcheck="false" type="text" autocomplete="off" style="border-radius: 15px; border: none; width: 100%; height: 100%; resize: none;">&lt;object data="https://thegportal.neocities.org" height="100%" width="100%"&gt;&lt;/object&gt;</textarea>
+</div>
+
+<hr class="dis">
+
+<div style="width: 100%; height: 20;">
+<textarea class="c" spellcheck="false" type="text" autocomplete="off" style="border-radius: 15px; border: none; width: 100%; height: 100%; resize: none;">&lt;frameset&gt;&lt;frame src="https://thegportal.neocities.org"&gt;&lt;/frameset&gt;</textarea>
+</div>
+</center>
+</div>
+</center>
+
+<hr>
+
+<!--Other Buttons-->
+<center>
+
+<p class="c" style="color: white; font-size: 25; width: 191; margin: 0;">Other Buttons :)</p>
+
+<div class="c sect" style="width: 80%; margin-bottom: 6; padding: 6 0;">
+<div>
+
+<style>
+.smbtn {
+  border-radius: 10px 10px;
+  z-index: 99;
+  cursor: pointer;
+  transition: 0.5s;
+  transition-timing-function: ease;
+}
+
+.smbtn:hover {
+  rotate: -45deg;
+  border-radius: 25px;
+  box-shadow: 0 0 15px rgba(206, 121, 252, 1.0);
+  transition: 0.5s;
+  transition-timing-function: ease;
+}
+
+.sbtn {
+  width: 380px;
+  border-radius: 5px;
+  height: 20px;
+  padding: 0 0;
+  margin: 6;
+  margin-bottom: 0;
+  border: none;
+  background: #8700c2;
+  display: block;
+  transition: 0.3s;
+}
+
+.sbtn:hover {
+  background: #b100ff;
+  transition: 0.3s;
+}
+</style>
+
+<img class="c smbtn" id="smb" height="50" width="50" onclick="sma()" src="https://thegportal.neocities.org/s-mode.svg">
+
+<div id="smc" class="c" style="margin: 6; background: rgba(0, 0, 0, 0.5); width: 400px; padding: 6 6; border-radius: 15px; display: none; margin-bottom: 0;"></div>
+
+<script src="https://thegportal.neocities.org/s-mode.js"></script>
+
+</div>
+</div>
+
+
+
+<hr>
+
+<!--Forms-->
+<center>
+
+<div style="width: 310; display: inline-block; padding: 0 6; margin-top: 6;">
+<embed class="frm c" body src="https://docs.google.com/forms/d/e/1FAIpQLSddyXMKtpD8qGmEis_U1A_XdfVwkr73FOCmeHiRSUS9r7pAJA/viewform?embedded=true" width="100%"  frameborder="0" marginheight="0" marginwidth="0" style="zoom: 80%;">
+<textarea class="c" spellcheck="false" type="text" autocomplete="off" style="border-radius: 10px; border: none; width: 100%; height: 35; margin-top: 6; resize: none;">https://docs.google.com/forms/d/e/1FAIpQLSddyXMKtpD8qGmEis_U1A_XdfVwkr73FOCmeHiRSUS9r7pAJA/viewform</textarea>
+<button class="btn button c" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSddyXMKtpD8qGmEis_U1A_XdfVwkr73FOCmeHiRSUS9r7pAJA/viewform', '_blank')" style="width: 100%; margin-top: 6;"><p style="font-family: oxanium;">Open URL in New Tab</p></button>
+</div>
+
+<div style="width: 310; display: inline-block; padding: 0 6; margin-top: 6;">
+<embed class="frm c" body src="https://docs.google.com/forms/d/e/1FAIpQLSeBD4d9gJFykQ6DQXfTnd3l2ze7Ldh0klCCSH50IsDbRUDKYQ/viewform?embedded=true" width="100%"  frameborder="0" marginheight="0" marginwidth="0" style="zoom: 80%;">
+<textarea class="c" spellcheck="false" type="text" autocomplete="off" style="border-radius: 10px; border: none; width: 100%; height: 35; margin-top: 6; resize: none;">https://docs.google.com/forms/d/e/1FAIpQLSddyXMKtpD8qGmEis_U1A_XdfVwkr73FOCmeHiRSUS9r7pAJA/viewform</textarea>
+<button class="btn button c" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSddyXMKtpD8qGmEis_U1A_XdfVwkr73FOCmeHiRSUS9r7pAJA/viewform', '_blank')" style="width: 100%; margin-top: 6;"><p style="font-family: oxanium;">Open URL in New Tab</p></button>
+</div>
+
+<div style="width: 310; display: inline-block; padding: 0 6; margin-top: 6;">
+<embed class="frm c" body src="https://docs.google.com/forms/d/e/1FAIpQLSfbsgYBpkBJGRyhctoEeuL77AHCFiG-u91BIv2Rz3SvUu8REw/viewform?embedded=true" width="100%"  frameborder="0" marginheight="0" marginwidth="0" style="zoom: 80%;">
+<textarea class="c" spellcheck="false" type="text" autocomplete="off" style="border-radius: 10px; border: none; width: 100%; height: 35; margin-top: 6; resize: none;">https://docs.google.com/forms/d/e/1FAIpQLSeBD4d9gJFykQ6DQXfTnd3l2ze7Ldh0klCCSH50IsDbRUDKYQ/viewform</textarea>
+<button class="btn button c" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeBD4d9gJFykQ6DQXfTnd3l2ze7Ldh0klCCSH50IsDbRUDKYQ/viewform', '_blank')" style="width: 100%; margin-top: 6;"><p style="font-family: oxanium;">Open URL in New Tab</p></button>
+</div>
+
+<div style="width: 310; display: inline-block; padding: 0 6; margin-top: 6;">
+<embed class="frm c" body src="https://docs.google.com/forms/d/e/1FAIpQLSdjuoD84fUIXF8yfWYQ7jqD50bOmDI7MwXM0oXjyP2nbHJ2kw/viewform?embedded=true" width="100%"  frameborder="0" marginheight="0" marginwidth="0" style="zoom: 80%;">
+<textarea class="c" spellcheck="false" type="text" autocomplete="off" style="border-radius: 10px; border: none; width: 100%; height: 35; margin-top: 6; resize: none;">https://docs.google.com/forms/d/e/1FAIpQLSdjuoD84fUIXF8yfWYQ7jqD50bOmDI7MwXM0oXjyP2nbHJ2kw/viewform</textarea>
+<button class="btn button c" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdjuoD84fUIXF8yfWYQ7jqD50bOmDI7MwXM0oXjyP2nbHJ2kw/viewform', '_blank')" style="width: 100%; margin-top: 6;"><p style="font-family: oxanium;">Open URL in New Tab</p></button>
+</div>
+
+</center>
+
+<hr id="partner">
+
+<center>
+<p class="c" style="color: white; font-size: 30; width: 178;">Partners! :)</p>
+</center>
+
+<div>
+<center>
+<a class="hyperlink link txt c" href="https://burgerv2.nekoweb.org/"><p>BurgerV2 (Link 1)</p></a>
+<a class="hyperlink link txt c" href="https://docs.google.com/document/d/1GhyLXWzNOX9MWloHcF2OM5UNi1Y7B1NPPceihUQBjaU/edit?pli=1&tab=t.0" target="_blank"><p>ChickenOS (Link 1)</p></a>
+<a class="hyperlink link txt c" href="https://teachers-are-the-best.neocities.org/"><p>Butter Dog Games (Link 1)</p></a>
+<a class="hyperlink link txt c" href="https://dasgames.neocities.org/"><p>DasGames (Link 1)</p></a>
+<a class="hyperlink link txt c" href="https://www.eduworkplacesite.com/homepage"><p>Edu Workpage (Link 1)</p></a>
+<a class="hyperlink link txt c" href="https://sites.google.com/view/eduworkplacesite/homepage"><p>Edu Workpage (Link 2)</p></a>
+<a class="hyperlink link txt c" href="https://xtest.nekoweb.org/"><p>OverLoad (xHub) (Link 1)</p></a>
+<a class="hyperlink link txt c" href="https://irongames.neocities.org/"><p>Planex (Link 1)</p></a>
+<br>
+<a class="hyperlink link txt c" href="https://ubgameunion.neocities.org/"><p>The UBGU</p></a>
+</center>
+</div>
+
+<hr id="social">
+
+<!--Socials-->
+<center>
+<p class="c" style="color: white; font-size: 30; width: 178;">My Socials :)</p>
+</center>
+
+<div>
+<center>
+<a class="hyperlink link txt c" onclick="window.open('https://www.reddit.com/r/theghub/', '_blank')"><p>GHub Subreddit (r/theghub)</p></a>
+<a class="hyperlink link txt c" onclick="window.open('https://www.youtube.com/channel/UC5gyYSk4n31mGob0i7OABnA', '_blank')"><p>GHub Official YouTube (@thegportal)</p></a>
+<a class="hyperlink link txt c" onclick="window.open('https://discord.com/invite/ZAnpqUNEJQ', '_blank')"><p>My Discord Server</p></a>
+<a class="hyperlink link txt c" onclick="window.open('https://www.snapchat.com/add/jer_powell2024?share_id=eKGXzsvSRqI&locale=en-US', '_blank')"><p>My Snapchat (jer_powell2024)</p></a>
+<a class="hyperlink link txt c" onclick="window.open('https://t.me/+lqNbFMe-v4BjMTVh', '_blank')"><p>My Telegram Group</p></a>
+<a class="hyperlink link txt c" onclick="window.open('https://youtube.com/@foggysigma', '_blank')"><p>My YouTube Channel</p></a>
+</center>
+</div>
+
+<!--Deleted Proxies-->
+
+<!--Deleted ExtHang3r-->
+
+<hr id="soundb">
+
+<div>
+<center>
+<p class="c" style="color: white; font-size: 30; width: 221;">Soundboards! :)</p>
+<a class="hyperlink link txt c" href="myinstants.html"><p>Myinstants Soundboard</p></a>
+<a class="hyperlink link txt c" href="voicy.html"><p>Voicy Soundboard</p></a>
+</center>
+</div>
+
+<!--sm-->
+
+<hr id="sm">
+
+<script>
+var closebtn = `<button class="c key" onclick="closeTool()" style="display: inline-block; margin: 3; margin-bottom: 0; margin-top: 6; width: 160px;">Close Tool</button>`;
+
+function openTool(url) {
+  document.getElementById('toolco').style.display = "block";
+  toolco.innerHTML = `<object data="` + url + `" style="width: 95%; height: 95%; background: black; margin: 6; margin-bottom: 0;"></object>` + `<button class="c key" onclick="ubTool('` + url + `')" style="display: inline-block; margin: 3; margin-bottom: 0; margin-top: 6; width: 160px;">Unblock (If blocked)</button><button class="c key" onclick="oAB('` + url + `')" style="display: inline-block; margin: 3; margin-bottom: 0; margin-top: 6; width: 160px;">Launch in about:blank</button>` + closebtn;
+}
+
+function openToolWB(url) {
+  document.getElementById('toolco').style.display = "block";
+  toolco.innerHTML = `<object data="` + url + `" style="width: 95%; height: 95%; background: white; margin: 6; margin-bottom: 0;"></object>` + `<button class="c key" onclick="ubTool('` + url + `')" style="display: inline-block; margin: 3; margin-bottom: 0; margin-top: 6; width: 160px;">Unblock (If blocked)</button><button class="c key" onclick="oAB('` + url + `')" style="display: inline-block; margin: 3; margin-bottom: 0; margin-top: 6; width: 160px;">Launch in about:blank</button>` + closebtn;
+}
+
+function closeTool() {
+  document.getElementById('toolco').style.display = "none";
+  toolco.innerHTML = ``;
+}
+
+function ubTool(uburl) {
+  ubt = window.open('/');
+  ubt.document.write(`<frameset><frame src="` + uburl + `"></frameset>`);
+}
+function oAB(aburl) {
+  ubt = window.open('about:blank');
+  ubt.document.write(`<frameset><frame src="` + aburl + `"></frameset>`);
+}
+</script>
+
+<center>
+<p class="c" style="color: white; font-size: 30; width: 359.5;">S-Mode Tools/Features :)</p>
+<div class="c" style="width: 100%; background: rgba(0, 0, 0, 0.5); padding: 8 0;" id="smco">S-Mode is disabled.</div>
+</center>
+
+<hr id="olinks">
+
+<!--Other-->
+<center>
+<p class="c" style="color: white; font-size: 30; width: 281;">Other Links/Tools :)</p>
+</center>
+
+<center>
+<a class="hyperlink link txt c" href="/BlobeBM-main/index.html" target="_blank"><p>BlobeBM (Bookmarklet Runner)</p></a>
+<a class="hyperlink link txt c" href="chat.html"><p>Chat</p></a>
+<a class="hyperlink link txt c" href="data-url-gen.html"><p>Data URL Generator</p></a>
+<a class="hyperlink link txt c" href="html-cloak.html"><p>HTML Code Cloaker</p></a>
+<a class="hyperlink link txt c" href="html-editor.html"><p>HTML Editor</p></a>
+<a class="hyperlink link txt c" href="gh-team.html"><p style="font-size: 18;">Members of the GHub Team</p></a>
+<a class="hyperlink link txt c" href="particle-background.html"><p>Particle Background</p></a>
+</center>
+
+<hr id="ccontent">
+
+<div>
+<center>
+<p class="c" style="color: white; font-size: 30; width: 258;">Custom Content :)</p>
+</center>
+</div>
+
+<center>
+<a class="hyperlink link txt c" href="custom-content.html"><p>Custom Content</p></a>
+</center>
+
+<hr id="mygames">
+
+<div>
+<center>
+<p class="c" style="color: white; font-size: 30; width: 239;">Made by GHub! :)</p>
+</center>
+</div>
+
+<center>
+<a class="hyperlink link txt c" href="meme-clicker.html"><p>Meme Clicker (Beta)</p></a>
+</center>
+
+<hr id="fgame">
+
+<div>
+<center>
+<p class="c" style="color: white; font-size: 30; width: 271;">Featured Games! :)</p>
+<p class="up c" style="color: white; font-size: 15; width: 232;">(To search for games, use ctrl+f)</p>
+</center>
+</div>
+
+<!--Featured List-->
+<div>
+<center>
+<a class="hyperlink link txt c" href="adventures-with-anxiety.html"><p>Adventures with Anxiety</p></a>
+<a class="hyperlink link txt c" href="block-blast.html"><p>Block Blast</p></a>
+<a class="hyperlink link txt c" href="bloxd-io.html"><p>Bloxd.io</p></a>
+<a class="hyperlink link txt c" href="chess.html"><p>Chess</p></a>
+<a class="hyperlink link txt c" href="cookie-clicker.html"><p>Cookie Clicker (2013)</p></a>
+<a class="hyperlink link txt c" href="cookie-clicker-2022.html"><p>Cookie Clicker (2022)</p></a>
+<a class="hyperlink link txt c" href="coreball.html"><p>Coreball</p></a>
+<a class="hyperlink link txt c" href="drift-boss.html"><p>Drift Boss</p></a>
+<a class="hyperlink link txt c" href="free-rider-hd.html"><p>Free Rider HD</p></a>
+<a class="hyperlink link txt c" href="gba-online.html"><p>GBA Online</p></a>
+<a class="hyperlink link txt c" href="hextris.html"><p>Hextris</p></a>
+<a class="hyperlink link txt c" href="archive-org.html"><p>Internet Archive</p></a>
+<a class="hyperlink link txt c" href="meme-clicker.html"><p>Meme Clicker (Beta)</p></a>
+<a class="hyperlink link txt c" href="monkey-mart.html"><p>Monkey Mart</p></a>
+<a class="hyperlink link txt c" href="monkey-mart-cf.html"><p>Monkey Mart (CRASH FREE)</p></a>
+<a class="hyperlink link txt c" href="moto-x3m.html"><p>Moto X3M</p></a>
+<a class="hyperlink link txt c" href="myinstants.html"><p>Myinstants Soundboard</p></a>
+<a class="hyperlink link txt c" href="pcjs.html"><p>PCJS.org</p></a>
+<a class="hyperlink link txt c" href="polytrack.html"><p>PolyTrack</p></a>
+<a class="hyperlink link txt c" href="retro-bowl.html"><p>Retro Bowl</p></a>
+<a class="hyperlink link txt c" href="sandtris.html"><p>Sandtris</p></a>
+<a class="hyperlink link txt c" href="slope.html"><p>Slope</p></a>
+<a class="hyperlink link txt c" href="snow-rider-3d.html"><p>Snow Rider 3D</p></a>
+<a class="hyperlink link txt c" href="spacebar-clicker-af.html"><p>Spacebar Clicker (AD FREE)</p></a>
+<a class="hyperlink link txt c" href="stickman-hook.html"><p>Stickman Hook</p></a>
+<a class="hyperlink link txt c" href="subway-surfers.html"><p>Subway Surfers</p></a>
+<a class="hyperlink link txt c" href="territorial-io.html"><p>Territorial.io</p></a>
+<a class="hyperlink link txt c" href="unlimited-wordle.html"><p>Unlimited Wordle</p></a>
+<a class="hyperlink link txt c" href="vex-8.html"><p>Vex 8</p></a>
+<a class="hyperlink link txt c" href="voicy.html"><p>Voicy Soundboard</p></a>
+<a class="hyperlink link txt c" href="wordle-plus.html"><p>Wordle Plus</p></a>
+<a class="hyperlink link txt c" href="yohoho-io.html"><p style="font-size: 18;">YoHoHo.io (Pirate Battle Royale)</p></a>
+</center>
+</div>
+
+<hr id="agame">
+
+<div>
+<center>
+<p class="c" id="gbb" style="color: white; font-size: 30; width: 204;">All Games! :)</p>
+
+<input class="c" id="gameSearch" type="text" placeholder="Search for Games & Tags!" style="margin: 6; border: 2px solid white; border-radius: 10px; background: rgba(50, 50, 50, 0.7); color: white; font-family: oxanium; font-size: 20; width: 450; height: 35; text-align: center; box-shadow: 0px 5px 10px black;">
+
+<div class="c sect" style="padding: 6px; margin: 6px; min-width: 95%;">
+<button class="c tagbtn" onclick="filterT(linkhc)">All</button>
+<button class="c tagbtn" onclick="filterT(twoplayerc)">2 Player</button>
+<button class="c tagbtn" onclick="filterT(actionc)">Action</button>
+<button class="c tagbtn" onclick="filterT(carsc)">Cars</button>
+<button class="c tagbtn" onclick="filterT(casualc)">Casual</button>
+<button class="c tagbtn" onclick="filterT(challengec)">Challenge</button>
+<button class="c tagbtn" onclick="filterT(clickerc)">Clicker</button>
+<button class="c tagbtn" onclick="filterT(competitivec)">Competitive</button>
+<button class="c tagbtn" onclick="filterT(endlessc)">Endless</button>
+<button class="c tagbtn" onclick="filterT(funnyc)">Funny</button>
+<button class="c tagbtn" onclick="filterT(idlec)">Idle</button>
+<button class="c tagbtn" onclick="filterT(onlinec)">Online</button>
+<button class="c tagbtn" onclick="filterT(platformerc)">Platformer</button>
+<button class="c tagbtn" onclick="filterT(puzzlec)">Puzzle</button>
+<button class="c tagbtn" onclick="filterT(sandboxc)">Sandbox</button>
+<button class="c tagbtn" onclick="filterT(shooterc)">Shooter</button>
+<button class="c tagbtn" onclick="filterT(skibidic)">Skibidi</button>
+<button class="c tagbtn" onclick="filterT(sportsc)">Sports</button>
+<button class="c tagbtn" onclick="filterT(storyc)">Story</button>
+<button class="c tagbtn" onclick="filterT(strategyc)">Strategy</button>
+<button class="c tagbtn" onclick="filterT(survivalc)">Survival</button>
+<button class="c tagbtn" onclick="filterT(tycoonc)">Tycoon</button>
+</div>
+</center>
+</div>
+
+<hr>
+
+<!--List-->
+<div id="galist">
+<center>
+<div class="linkh c competitive online shooter"><a class="hyperlink link txt c" href="1v1-lol.html"><p>1v1.LOL</p></a></div>
+<div class="linkh c story"><a class="hyperlink link txt c" href="adventures-with-anxiety.html"><p>Adventures with Anxiety</p></a></div>
+<div class="linkh c competitive online"><a class="hyperlink link txt c" href="agario.html"><p>Agario</p></a></div>
+<div class="linkh c twoplayer competitive sports"><a class="hyperlink link txt c" href="ahcd.html"><p>Air Hockey Championship Deluxe</p></a></div>
+<div class="linkh c action challenge"><a class="hyperlink link txt c" href="asrp.html"><p>Amazing Spider Rope Police</p></a></div>
+<div class="linkh c platformer"><a class="hyperlink link txt c" href="appel.html"><p>Appel</p></a></div>
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="avoid.html"><p>Avoid</p></a></div>
+<div class="linkh c action shooter"><a class="hyperlink link txt c" href="awesome-tanks-2.html"><p>Awesome Tanks 2</p></a></div>
+<div class="linkh c skibidi"><a class="hyperlink link txt c" href="backrooms-skibidi-terrors.html"><p style="font-size: 19;">Backrooms Skibidi Terrors</p></a></div>
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="bad-time-simulator.html"><p>Bad Time Simulator</p></a></div>
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="ball-drop.html"><p>Ball Drop</p></a></div>
+<div class="linkh c twoplayer sports"><a class="hyperlink link txt c" href="basket-random.html"><p>Basket Random</p></a></div>
+<div class="linkh c challenge platformer"><a class="hyperlink link txt c" href="btts.html"><p>Big Tower Tiny Square</p></a></div>
+<div class="linkh c challenge platformer"><a class="hyperlink link txt c" href="btts2.html"><p>Big Tower Tiny Square 2</p></a></div>
+<div class="linkh c story"><a class="hyperlink link txt c" href="bitlife.html"><p>Bitlife</p></a></div>
+<div class="linkh c online"><a class="hyperlink link txt c" href="blacket.html"><p>Blacket (Blooket Private Server)</p></a></div>
+<div class="linkh c puzzle"><a class="hyperlink link txt c" href="block-blast.html"><p>Block Blast</p></a></div>
+<div class="linkh c competitive online shooter"><a class="hyperlink link txt c" href="blockpost.html"><p>Blockpost</p></a></div>
+<div class="linkh c online"><a class="hyperlink link txt c" href="blooket.html"><p>Blooket</p></a></div>
+<div class="linkh c shooter strategy"><a class="hyperlink link txt c" href="bloons-td-1.html"><p>Bloons Tower Defense 1</p></a></div>
+<div class="linkh c shooter strategy"><a class="hyperlink link txt c" href="bloons-td-2.html"><p>Bloons Tower Defense 2</p></a></div>
+<div class="linkh c shooter strategy"><a class="hyperlink link txt c" href="bloons-td-3.html"><p>Bloons Tower Defense 3</p></a></div>
+<div class="linkh c shooter strategy"><a class="hyperlink link txt c" href="bloons-td-4.html"><p>Bloons Tower Defense 4</p></a></div>
+<div class="linkh c sandbox survival"><a class="hyperlink link txt c" href="bloxd-io.html"><p>Bloxd.io</p></a></div>
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="box-tower.html"><p>Box Tower</p></a></div>
+<div class="linkh c twoplayer sports"><a class="hyperlink link txt c" href="boxing-random.html"><p>Boxing Random</p></a></div>
+<div class="linkh c strategy"><a class="hyperlink link txt c" href="bubble-shooter.html"><p>Bubble Shooter</p></a></div>
+<div class="linkh c tycoon"><a class="hyperlink link txt c" href="burger-bounty.html"><p>Burger Bounty</p></a></div>
+<div class="linkh c strategy"><a class="hyperlink link txt c" href="burrito-bison-LL.html"><p style="font-size: 19;">Burrito Bison - Launcha Libre</p></a></div>
+<div class="linkh c strategy"><a class="hyperlink link txt c" href="burrito-bison-r.html"><p>Burrito Bison - Revenge</p></a></div>
+<div class="linkh c shooter strategy"><a class="hyperlink link txt c" href="cod-zombies.html"><p>Call of Duty: Zombies</p></a></div>
+<div class="linkh c puzzle strategy"><a class="hyperlink link txt c" href="chain-cube-2048.html"><p>Chain Cube 2048</p></a></div>
+<div class="linkh c roleplay"><a class="hyperlink link txt c" href="character-ai.html"><p>Character.ai</p></a></div>
+<div class="linkh c twoplayer strategy"><a class="hyperlink link txt c" href="checkers.html"><p>Checkers</p></a></div>
+<div class="linkh c twoplayer strategy"><a class="hyperlink link txt c" href="chess.html"><p>Chess</p></a></div>
+<div class="linkh c puzzle"><a class="hyperlink link txt c" href="classic-nonogram.html"><p>Classic Nonogram</p></a></div>
+<div class="linkh c action shooter strategy"><a class="hyperlink link txt c" href="clash-of-tanks.html"><p>Clash of Tanks</p></a></div>
+<div class="linkh c action challenge platformer"><a class="hyperlink link txt c" href="cluster-rush.html"><p>Cluster Rush</p></a></div>
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="color-box.html"><p>Color Box</p></a></div>
+<div class="linkh c strategy"><a class="hyperlink link txt c" href="color-vs-block.html"><p>Color vs Block</p></a></div>
+<div class="linkh c puzzle"><a class="hyperlink link txt c" href="connector.html"><p>Connector</p></a></div>
+<div class="linkh c clicker idle tycoon"><a class="hyperlink link txt c" href="cookie-clicker.html"><p>Cookie Clicker (2013)</p></a></div>
+<div class="linkh c clicker idle tycoon"><a class="hyperlink link txt c" href="cookie-clicker-2022.html"><p>Cookie Clicker (2022)</p></a></div>
+<div class="linkh c  clickeridle tycoon"><a class="hyperlink link txt c" href="cookie-clicker-2.html"><p>Cookie Clicker 2</p></a></div>
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="coreball.html"><p>Coreball</p></a></div>
+<div class="linkh c skibidi"><a class="hyperlink link txt c" href="cowboy-vs-skibidi-toilets.html"><p>Cowboy vs Skibidi Toilets</p></a></div>
+<div class="linkh c online"><a class="hyperlink link txt c" href="crazy-cattle.html"><p>Crazy Cattle 3D</p></a></div>
+<div class="linkh c strategy"><a class="hyperlink link txt c" href="crossy-road.html"><p>Crossy Road</p></a></div>
+<div class="linkh c platformer"><a class="hyperlink link txt c" href="CUB.html"><p>CUB</p></a></div>
+<div class="linkh c platformer"><a class="hyperlink link txt c" href="cube-adventure.html"><p>Cube Adventure</p></a></div>
+<div class="linkh c challenge puzzle"><a class="hyperlink link txt c" href="cut-the-rope.html"><p>Cut the Rope - TT</p></a></div>
+<div class="linkh c action shooter skibidi"><a class="hyperlink link txt c" href="dead-aim-skibidi.html"><p style="font-size: 17.2;">Dead Aim Skibidi Toilets Attack</p></a></div>
+<div class="linkh c competitive online shooter"><a class="hyperlink link txt c" href="deadshot-io.html"><p>Deadshot.io</p></a></div>
+<div class="linkh c competitive online"><a class="hyperlink link txt c" href="digdig-io.html"><p>DigDig.io</p></a></div>
+<div class="linkh c challenge endless"><a class="hyperlink link txt c" href="dino-game.html"><p>Dino Game</p></a></div>
+<div class="linkh c online survival"><a class="hyperlink link txt c" href="disaster-arena.html"><p>Disaster Arena</p></a></div>
+<div class="linkh c challenge endless"><a class="hyperlink link txt c" href="doodle-jump.html"><p>Doodle Jump</p></a></div>
+<div class="linkh c strategy"><a class="hyperlink link txt c" href="draw-climber.html"><p>Draw Climber</p></a></div>
+<div class="linkh c puzzle"><a class="hyperlink link txt c" href="draw-the-bridge.html"><p>Draw The Bridge</p></a></div>
+<div class="linkh c puzzle"><a class="hyperlink link txt c" href="draw-to-smash.html"><p>Draw To Smash!</p></a></div>
+<div class="linkh c cars endless"><a class="hyperlink link txt c" href="drift-boss.html"><p>Drift Boss</p></a></div>
+<div class="linkh c action cars"><a class="hyperlink link txt c" href="drift-hunters.html"><p>Drift Hunters</p></a></div>
+<div class="linkh c puzzle"><a class="hyperlink link txt c" href="drop-n-merge.html"><p>Drop n Merge</p></a></div>
+<div class="linkh c sandbox survival"><a class="hyperlink link txt c" href="https://drive.google.com/file/d/1P-r3ZGoNtCc9C_kOFwGj9MBmbSy_2Ezc/view" target="_blank"><p>Eaglercraft (1.11.2)</p></a></div>
+<div class="linkh c sandbox survival"><a class="hyperlink link txt c" href="eaglercraft-g.html"><p>Eaglercraft (Minecraft)</p></a></div>
+<div class="linkh c sandbox survival"><a class="hyperlink link txt c" href="https://drive.google.com/file/d/1P-r3ZGoNtCc9C_kOFwGj9MBmbSy_2Ezc/view" target="_blank"><p>Eaglercraft (Minecraft) - Download</p></a></div>
+<div class="linkh c cars endless survival"><a class="hyperlink link txt c" href="escape-road.html"><p>Escape Road</p></a></div>
+<div class="linkh c cars endless survival"><a class="hyperlink link txt c" href="escape-road-2.html"><p>Escape Road 2</p></a></div>
+<div class="linkh c cars endless survival"><a class="hyperlink link txt c" href="escape-road-city-2.html"><p>Escape Road City 2</p></a></div>
+<div class="linkh c puzzle"><a class="hyperlink link txt c" href="evermatch.html"><p>Evermatch</p></a></div>
+<div class="linkh c action"><a class="hyperlink link txt c" href="evoworld-io.html"><p>Evoworld.io</p></a></div>
+<div class="linkh c action challenge"><a class="hyperlink link txt c" href="fancade.html"><p>Fancade</p></a></div>
+<div class="linkh c puzzle"><a class="hyperlink link txt c" href="fill-the-water.html"><p>Fill The Water</p></a></div>
+<div class="linkh c twoplayer"><a class="hyperlink link txt c" href="fb-and-wg.html"><p>Fireboy & Watergirl</p></a></div>
+<div class="linkh c action"><a class="hyperlink link txt c" href="winston.html"><p>Five Nights at Winston's</p></a></div>
+<div class="linkh c challenge endless"><a class="hyperlink link txt c" href="flappy-bird.html"><p>Flappy Bird</p></a></div>
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="floater.html"><p>Floater</p></a></div>
+<div class="linkh c sandbox"><a class="hyperlink link txt c" href="fluid-simulation.html"><p>Fluid Simulation</p></a></div>
+<div class="linkh c action strategy"><a class="hyperlink link txt c" href="foodstars-io.html"><p>FoodStars.io</p></a></div>
+<div class="linkh c sports strategy"><a class="hyperlink link txt c" href="football-bros.html"><p>Football Bros</p></a></div>
+<div class="linkh c online"><a class="hyperlink link txt c" href="free-rider-hd.html"><p>Free Rider HD</p></a></div>
+<div class="linkh c puzzle"><a class="hyperlink link txt c" href="free-the-ball.html"><p>Free the Ball</p></a></div>
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="fnf.html"><p>Friday Night Funkin'</p></a></div>
+<div class="linkh c challenge endless"><a class="hyperlink link txt c" href="fruit-ninja.html"><p>Fruit Ninja</p></a></div>
+<div class="linkh c shooter"><a class="hyperlink link txt c" href="funny-shooter-2.html"><p>Funny Shooter 2</p></a></div>
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="gauntlet-1985.html"><p>Gauntlet (1985)</p></a></div>
+<div class="linkh c action challenge"><a class="hyperlink link txt c" href="gba-online.html"><p>GBA Online</p></a></div>
+<div class="linkh c challenge platformer"><a class="hyperlink link txt c" href="gd-lite.html"><p>Geometry Dash Lite</p></a></div>
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="geometry-hop.html"><p>Geometry Hop</p></a></div>
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="geometry-rash.html"><p>Geometry Rash</p></a></div>
+<div class="linkh c action strategy"><a class="hyperlink link txt c" href="gladihoppers.html"><p>Gladihoppers</p></a></div>
+<div class="linkh c strategy"><a class="hyperlink link txt c" href="golf-orbit.html"><p>Golf Orbit</p></a></div>
+<div class="linkh c sports strategy"><a class="hyperlink link txt c" href="google-baseball.html"><p>Google Baseball</p></a></div>
+<div class="linkh c casual puzzle"><a class="hyperlink link txt c" href="google-minesweeper.html"><p>Google Minesweeper</p></a></div>
+<div class="linkh c casual"><a class="hyperlink link txt c" href="google-snake.html"><p>Google Snake</p></a></div>
+<div class="linkh c strategy"><a class="hyperlink link txt c" href="granny.html"><p>Granny</p></a></div>
+<div class="linkh c strategy"><a class="hyperlink link txt c" href="grow-island.html"><p>Grow Island</p></a></div>
+<div class="linkh c strategy"><a class="hyperlink link txt c" href="gun-mayhem.html"><p>Gun Mayhem</p></a></div>
+<div class="linkh c strategy"><a class="hyperlink link txt c" href="gun-mayhem-2.html"><p>Gun Mayhem 2</p></a></div>
+<div class="linkh c strategy"><a class="hyperlink link txt c" href="gunspin.html"><p>GunSpin</p></a></div>
+<div class="linkh c puzzle"><a class="hyperlink link txt c" href="gyro-maze-3d.html"><p>Gyro Maze 3d</p></a></div>
+<div class="linkh c action funny strategy"><a class="hyperlink link txt c" href="happy-wheels.html"><p>Happy Wheels (Fan-Made)</p></a></div>
+<div class="linkh c action"><a class="hyperlink link txt c" href="hexgl.html"><p>HexGL</p></a></div>
+<div class="linkh c puzzle"><a class="hyperlink link txt c" href="hextris.html"><p>Hextris</p></a></div>
+<div class="linkh c action cars"><a class="hyperlink link txt c" href="hillclimb-race.html"><p>Hillclimb Race</p></a></div>
+<div class="linkh c action"><a class="hyperlink link txt c" href="hobo.html"><p>Hobo</p></a></div>
+<div class="linkh c online strategy"><a class="hyperlink link txt c" href="hole-io.html"><p>Hole.io</p></a></div>
+<div class="linkh c online"><a class="hyperlink link txt c" href="human-or-not.html"><p>Human or Not?</p></a></div>
+<!--<a class="hyperlink link txt c" href="hyperspace.html"><p>Hyperspace</p></a>
+RIP Hyperspace :(-->
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="i-know-the-world.html"><p>I Know the World</p></a></div>
+<div class="linkh c idle"><a class="hyperlink link txt c" href="idle-airline-tycoon.html"><p>Idle Airline Tycoon</p></a></div>
+<div class="linkh c idle"><a class="hyperlink link txt c" href="idle-breakout.html"><p>Idle Breakout</p></a></div>
+<div class="linkh c online"><a class="hyperlink link txt c" href="imperia-online.html"><p>Imperia Online</p></a></div>
+<div class="linkh c casual endless"><a class="hyperlink link txt c" href="infinite-craft.html"><p>Infinite Craft</p></a></div>
+<div class="linkh c online"><a class="hyperlink link txt c" href="archive-org.html"><p>Internet Archive</p></a></div>
+<div class="linkh c action strategy"><a class="hyperlink link txt c" href="iron-snout.html"><p>Iron Snout</p></a></div>
+<div class="linkh c challenge endless"><a class="hyperlink link txt c" href="jetpack-joyride.html"><p>Jetpack Joyride</p></a></div>
+<div class="linkh c puzzle"><a class="hyperlink link txt c" href="jigsaw-puzzle.html"><p>Jigsaw Puzzle</p></a></div>
+<div class="linkh c strategy"><a class="hyperlink link txt c" href="johnny-trigger.html"><p>Johnny Trigger</p></a></div>
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="just-one-boss.html"><p>Just One Boss</p></a></div>
+<div class="linkh c online"><a class="hyperlink link txt c" href="kiz-10.html"><p>Kiz10</p></a></div>
+<div class="linkh c online shooter"><a class="hyperlink link txt c" href="kour-io.html"><p>Kour.io</p></a></div>
+<div class="linkh c challenge puzzle"><a class="hyperlink link txt c" href="laser-overload.html"><p>Laser Overload</p></a></div>
+<div class="linkh c strategy"><a class="hyperlink link txt c" href="learn-to-fly.html"><p>Learn to Fly</p></a></div>
+<div class="linkh c strategy"><a class="hyperlink link txt c" href="learn-to-fly-i.html"><p>Learn to Fly Idle</p></a></div>
+<div class="linkh c sandbox"><a class="hyperlink link txt c" href="little-alchemy.html"><p>Little Alchemy</p></a></div>
+<div class="linkh c sandbox"><a class="hyperlink link txt c" href="little-alchemy-2.html"><p>Little Alchemy 2</p></a></div>
+<div class="linkh c cars"><a class="hyperlink link txt c" href="madalin-stunt-cars.html"><p>Madalin Stunt Cars</p></a></div>
+<div class="linkh c action"><a class="hyperlink link txt c" href="project-nexus.html"><p>Madness: Project Nexus</p></a></div>
+<div class="linkh c clicker idle"><a class="hyperlink link txt c" href="meme-clicker.html"><p>Meme Clicker (Beta)</p></a></div>
+<div class="linkh c skibidi"><a class="hyperlink link txt c" href="merge-master-skibidi-bop.html"><p>Merge Master Skibidi Bop</p></a></div>
+<div class="linkh c puzzle"><a class="hyperlink link txt c" href="microsoft-sudoku.html"><p>Microsoft Sudoku</p></a></div>
+<div class="linkh c clicker idle"><a class="hyperlink link txt c" href="money-clicker.html"><p>Money Clicker</p></a></div>
+<div class="linkh c idle"><a class="hyperlink link txt c" href="monkey-mart.html"><p>Monkey Mart</p></a></div>
+<div class="linkh c idle"><a class="hyperlink link txt c" href="monkey-mart-cf.html"><p>Monkey Mart (CRASH FREE)</p></a></div>
+<div class="linkh c competitive online"><a class="hyperlink link txt c" href="mope-io.html"><p>Mope.io</p></a></div>
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="moto-x3m.html"><p>Moto X3M</p></a></div>
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="moto-x3m-spooky.html"><p>Moto X3M - Spooky Land</p></a></div>
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="muscle-clicker-2.html"><p>Muscle Clicker 2</p></a></div>
+<div class="linkh c funny online"><a class="hyperlink link txt c" href="myinstants.html"><p>Myinstants Soundboard</p></a></div>
+<div class="linkh c action strategy"><a class="hyperlink link txt c" href="retro-bowl-25.html"><p>NFL Retro Bowl '25</p></a></div>
+<div class="linkh c challenge"><a class="hyperlink link txt c" href="n-gon.html"><p>n-gon</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="nuts-bolts-puzzle.html"><p>Nuts & Bolts Puzzle</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="one-line-only.html"><p>One Line Only</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="ovo.html"><p>OvO</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="pandemic-2.html"><p>Pandemic 2</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="papas-pizzeria.html"><p>Papa's Pizzeria</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="papas-sushiria.html"><p>Papa's Sushiria</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="paper-io-2.html"><p>Paper.io 2</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="parking-fury-3.html"><p>Parking Fury 3</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="particle-life.html"><p>Particle Life</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="pcjs.html"><p>PCJS.org</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="penalty-shooters-2.html"><p>Penalty Shooters 2</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="pokemon-crystal.html"><p>Pokémon Crystal</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="pokemon-firered.html"><p>Pokémon FireRed (GBA)</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="pokemon-leafgreen.html"><p>Pokémon LeafGreen</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="pokerogue.html"><p>PokéRogue</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="polytrack.html"><p>PolyTrack</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="portal-flash.html"><p>Portal - Flash Version</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="puzzle-fever.html"><p>Puzzle Fever</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="retro-bowl.html"><p>Retro Bowl</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="retro-bowl-college.html"><p>Retro Bowl College</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="retro-bowl-hacked.html"><p>Retro Bowl HACKED</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="rooftop-snipers.html"><p>Rooftop Snipers</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="sandboxels.html"><p>Sandboxels</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="sandtris.html"><p>Sandtris</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="sea-match.html"><p>Sea Match</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="shell-shockers.html"><p>Shell Shockers</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="ships-3d.html"><p>Ships 3D</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="skibidi-fishing.html"><p>Skibidi Fishing</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="skibidi-hero-io.html"><p>Skibidi Hero.io</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="skibidi-hit-master.html"><p>Skibidi Hit Master</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="skibidi-survivor-rush.html"><p>Skibidi Survivor Rush</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="skibidi-toilet-puzzle.html"><p>Skibidi Toilet Puzzle</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="skibidi-toilet-shooter-ch-1.html"><p>Skibidi Toilet Shooter Ch. 1</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="skibidi-toilet-vs-cameraman.html"><p>Skibidi Toilet vs Cameraman Sniper</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="slant.html"><p>Slant</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="slice-it-all.html"><p>Slice It All!</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="slide-stone.html"><p>SLIDE STONE</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="slope.html"><p>Slope</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="slope-2.html"><p>Slope 2</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="slope-3.html"><p>Slope 3</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="slowroads-io.html"><p>Slowroads.io</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="smash-karts.html"><p>Smash Karts</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="snow-rider-3d.html"><p>Snow Rider 3D</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="soccer-bros.html"><p>Soccer Bros</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="soccer-random.html"><p>Soccer Random</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="spacebar-clicker.html"><p>Spacebar Clicker</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="spacebar-clicker-af.html"><p>Spacebar Clicker (AD FREE)</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="space-waves.html"><p>Space Waves</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="speed-stars.html"><p>Speed Stars</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="stickman-hook.html"><p>Stickman Hook</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="subway-surfers.html"><p>Subway Surfers</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="superhot.html"><p>SuperHot Prototype</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="super-liquid-soccer.html"><p>Super Liquid Soccer</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="sm64.html"><p>Super Mario 64</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="survivor-io.html"><p>Survivor.io</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="tag.html"><p>Tag</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="tank-trouble-2.html"><p>Tank Trouble 2</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="temple-run-2.html"><p>Temple Run 2</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="territorial-io.html"><p>Territorial.io</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="tetris.html"><p>Tetris</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="tnmn.html"><p>That's Not My Neighbour</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="the-impossible-quiz.html"><p>The Impossible Quiz</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="the-oregon-trail.html"><p>The Oregon Trail</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="there-is-no-game.html"><p>There Is No Game</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="titol.html"><p>This is the Only Level</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="tile-connect-club.html"><p>Tile Connect Club</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="tilt.html"><p>Tilt</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="tiny-fishing.html"><p>Tiny Fishing</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="tomb-of-the-mask.html"><p>Tomb of the Mask</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="toss-the-turtle.html"><p>Toss the Turtle</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="traffic-jam-3d.html"><p>Traffic Jam 3D</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="traffic-tom.html"><p>Traffic Tom</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="tribals-io.html"><p>Tribals.io</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="truck-trials.html"><p>Truck Trials</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="tunnel-rush.html"><p>Tunnel Rush</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="unlimited-wordle.html"><p>Unlimited Wordle</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="upside-down.html"><p>Upside Down</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="venge-io.html"><p>Venge.io</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="vex-3.html"><p>Vex 3</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="vex-4.html"><p>Vex 4</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="vex-5.html"><p>Vex 5</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="vex-6.html"><p>Vex 6</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="vex-7.html"><p>Vex 7</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="vex-8.html"><p>Vex 8</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="voicy.html"><p>Voicy Soundboard</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="volley-random.html"><p>Volley Random</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="warbrokers-io.html"><p>WarBrokers.io</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="watermelon-suika-game.html"><p>Watermelon Suika Game</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="wbwwb.html"><p>We Become what we Behold</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="wheely-7-detective.html"><p>Wheely 7 - Detective</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="word-search.html"><p>Word Search</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="wordle-plus.html"><p>Wordle Plus</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="words-of-wonders.html"><p>Words of Wonders</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="worldguessr.html"><p>Worldguessr</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="worlds-hardest-game.html"><p>World's Hardest Game</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="yohoho-io.html"><p>YoHoHo.io (Pirate Battle Royale)</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="zeepkist.html"><p>Zeepkist</p></a></div>
+<div class="linkh c notag"><a class="hyperlink link txt c" href="zombs-royale.html"><p>Zombs Royale</p></a></div>
+</center>
+</div>
+
+<script>
+var search = document.getElementById('gameSearch');
+
+var elementsWithClass = document.querySelectorAll(".linkh");
+
+function searchItems() {
+  var sv = search.value;
+  document.getElementById('galist').innerHTML = '';
+  elementsWithClass.forEach(element => {
+    if (element.textContent.toUpperCase().includes(sv.toUpperCase())) {
+      document.getElementById('galist').innerHTML += element.outerHTML;
+    }
+  });
+  if(document.getElementById('galist').innerHTML == '') {
+    document.getElementById('galist').innerHTML = '<div class="c sect" style="padding: 6 6;">No results found :(</div>';
+  }
+}
+
+search.addEventListener('change', searchItems);
+
+var linkhc = document.querySelectorAll('.linkh');
+
+var twoplayerc = document.querySelectorAll('.twoplayer');
+twoplayerc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(twoplayerc)">2 Player</button>`;
+});
+
+var actionc = document.querySelectorAll('.action');
+actionc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(actionc)">Action</button>`;
+});
+
+var carsc = document.querySelectorAll('.cars');
+carsc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(carsc)">Cars</button>`;
+});
+
+var casualc = document.querySelectorAll('.casual');
+casualc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(casualc)">Casual</button>`;
+});
+
+var challengec = document.querySelectorAll('.challenge');
+challengec.forEach(element => {
+    element.innerHTML += `<a><button class="c tagbtn" onclick="filterT(challengec)">Challenge</button></a>`;
+});
+
+var clickerc = document.querySelectorAll('.clicker');
+clickerc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(clickerc)">Clicker</button>`;
+});
+
+var competitivec = document.querySelectorAll('.competitive');
+competitivec.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(competitivec)">Competitive</button>`;
+});
+
+var endlessc = document.querySelectorAll('.endless');
+endlessc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(endlessc)">Endless</button>`;
+});
+
+var funnyc = document.querySelectorAll('.funny');
+funnyc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(funnyc)">Funny</button>`;
+});
+
+var idlec = document.querySelectorAll('.idle');
+idlec.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(idlec)">Idle</button>`;
+});
+
+var notagc = document.querySelectorAll('.notag');
+notagc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(notagc)">No Tags Yet!</button>`;
+});
+
+var onlinec = document.querySelectorAll('.online');
+onlinec.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(onlinec)">Online</button>`;
+});
+
+var platformerc = document.querySelectorAll('.platformer');
+platformerc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(platformerc)">Platformer</button>`;
+});
+
+var puzzlec = document.querySelectorAll('.puzzle');
+puzzlec.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(puzzlec)">Puzzle</button>`;
+});
+
+var roleplayc = document.querySelectorAll('.roleplay');
+roleplayc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(roleplayc)">Role Play</button>`;
+});
+
+var sandboxc = document.querySelectorAll('.sandbox');
+sandboxc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(sandboxc)">Sandbox</button>`;
+});
+
+var shooterc = document.querySelectorAll('.shooter');
+shooterc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(shooterc)">Shooter</button>`;
+});
+
+var skibidic = document.querySelectorAll('.skibidi');
+skibidic.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(skibidic)">Skibidi</button>`;
+});
+
+var sportsc = document.querySelectorAll('.sports');
+sportsc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(sportsc)">Sports</button>`;
+});
+
+var storyc = document.querySelectorAll('.story');
+storyc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(storyc)">Story</button>`;
+});
+
+var strategyc = document.querySelectorAll('.strategy');
+strategyc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(strategyc)">Strategy</button>`;
+});
+
+var survivalc = document.querySelectorAll('.survival');
+survivalc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(survivalc)">Survival</button>`;
+});
+
+var tycoonc = document.querySelectorAll('.tycoon');
+tycoonc.forEach(element => {
+    element.innerHTML += `<button class="c tagbtn" onclick="filterT(tycoonc)">Tycoon</button>`;
+});
+
+var glist = document.getElementById('galist');
+
+function filterT(vari) {
+  var iii = vari
+  glist.innerHTML = '';
+  iii.forEach(element => {
+    glist.innerHTML += element.outerHTML;
+  });
+  var g = document.getElementById('gbb');
+  var rect = g.getBoundingClientRect();
+  window.scrollTo(0, rect.top + window.scrollY);
+}
+</script>
+
+<hr>
+
+<!--Contact-->
+
+<center>
+<p class="c" style="color: white; font-size: 30; width: 204;">Contact Me! :)</p>
+
+<a class="hyperlink link txt c" href="mailto:mackenziereef111@gmail.com" target="_blank"><p style="font-size: 19;">Email: mackenziereef111@gmail.com</p></a>
+<a class="hyperlink link txt c" href="https://www.snapchat.com/add/jer_powell2024?share_id=eKGXzsvSRqI&locale=en-US" target="_blank"><p>Snapchat: jer_powell2024</p></a>
+</center>
+
+<hr>
+
+<div class="sect c" style="width: 75%">
+<center>
+<p class="c" style="margin: 6; padding: 6 0;">I did not create these games; all of the credit goes to the respective owners. I also haven't made any profit from this project.</p>
+</center>
+</div>
+</center>
+
+<hr>
+
+<script>
+const elements = document.getElementsByClassName("linkh");
+
+const count = elements.length;
+
+console.log(count);
+document.getElementById('gameAmount').textContent = count + ' Games! :)';
+</script>
+<script>
+async function getIP() {
+  try {
+    const response = await fetch('https://api.ipify.org?format=json');
+    const data = await response.json();
+    var t = new Date();
+    if (data.ip === '10.20.81.86' && t.getHours() < 12) {
+      document.getElementById('ipban').style.display = 'block';
+      document.getElementById('ipban').innerHTML = `<center>
+      <h1>Your District has been IP Banned!</h1>
+      <p>Someone snitched on you & said that you guys are addicted to GHub! GHub will be available in your school everyday, but only once 12:00PM starts :)</p>
+      </center>`;
+    } else {
+      document.getElementById('ipban').style.display = 'none';
+    }
+  } catch (error) {
+    console.error('Error fetching IP address:', error);
+  }
+}
+getIP();
+</script>
+</body>
+
+</html>

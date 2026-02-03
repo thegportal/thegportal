@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  font-family: tahoma;
+  user-select: none;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+<center>
+<div class="content">
+<h1>Thank you for downloading GHub!</h1>
+<p>I hope you have an amazing time on my website! :) -Jeremy</p>
+</div>
+</center>
+<script>
+function downloadGH() {
+  const element = document.createElement('a');
+  const blob = new Blob([`<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/classroom/favicon.png">
+</head>
+<frameset><frame src="https://thegportal.neocities.org"></frameset>
+</html>`], { type: 'text/plain' });
+  const url = URL.createObjectURL(blob);
+  element.setAttribute('href', url);
+  element.setAttribute('download', 'GHub.html');
+  element.style.display = 'none';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+  URL.revokeObjectURL(url);
+}
+
+downloadGH();
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="e-key.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GLK05RC89"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2GLK05RC89');
+</script>
+
+<title>GH JavaScript Version</title>
+
+<!--Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+
+<div id="pframe" style="display: block;">
+<center>
+<div id="particles-js">
+<script src=
+        "particles.js">
+    </script>
+    <script src=
+        "app.js">
+</script>
+</div>
+</center>
+</div>
+
+<script>
+var th = localStorage.getItem('themes');
+th = parseInt(th);
+checkBG();
+
+function checkBG() {
+  if (th == 0) {
+    body.style.background = "linear-gradient(to right, #005eb5, #3d0075)";
+    } if (th == 1) {
+    body.style.background = "linear-gradient(to right, #ff0000, #910000)";
+  } if (th == 2) {
+    body.style.background = "#141414";
+  } if (th == 3) {
+    body.style.background = "linear-gradient(to right, #1bb000, #106900)";
+  } if (th == 4) {
+    body.style.background = "linear-gradient(to right, #db00d4, #780074)";
+  } if (th == 5) {
+    body.style.background = "linear-gradient(to right, #e6d602, #7a7200)";
+  }
+}
+
+var tp = localStorage.getItem('particlet');
+tp = parseInt(tp);
+checkp();
+
+function checkp() {
+  if (tp == 0) {
+    pframe.style.display = "block";
+    ptoggle.innerHTML = "Particles are enabled";
+    ptoggle.style.background = "green";
+  } if (tp == 1) {
+    pframe.style.display = "none";
+    ptoggle.innerHTML = "Particles are disabled";
+    ptoggle.style.background = "red";
+  } if (tp > 1) {
+    tp = 0;
+    checkp();
+  }
+}
+
+</script>
+
+<div style="position: fixed; right: 0;">
+<button class="c key" onclick="emergency()" style="margin: 0;">E-Key</button>
+</div>
+<!--Logo-->
+<div>
+<a class="logo c" href="index.html"><img src="GHub Logo 4 Simple Light.png" width="auto" height="5.7%"></a>
+</div>
+
+<!--G-->
+<center>
+<div class="sect c" style="width: 80%; margin: 6;">
+<p class="tc" style="margin: 0;">The JavaScript version is made for strict filters!</p>
+<p class="tc" style="margin: 0; padding: 6 0;">Methods to get on it:</p>
+<p class="tc" style="margin: 0; text-align: left;">-1. Download the latest version in <a href="https://drive.google.com/drive/folders/1ag2-UE0z4g8JR7yg_RpKHg1kjAQJZ7tI?usp=sharing" target="_blank" style="text-decoration: underline; color: #eb34e1">this Google Drive folder</a>, use Ctrl+O to open it.</p>
+<p class="tc" style="margin: 0; text-align: left;">-2. If you can't download the file or the file doesn't work, copy the code from the latest version in <a href="https://drive.google.com/drive/folders/1ag2-UE0z4g8JR7yg_RpKHg1kjAQJZ7tI?usp=sharing" target="_blank" style="text-decoration: underline; color: #eb34e1">this Google Drive folder</a>. Then, paste the code into an HTML Editor & run it. (Examples of HTML Editors: <a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" target="_blank" style="text-decoration: underline; color: #eb34e1">W3Schools Tryit Editor</a>, <a href="https://html-online.com/" target="_blank" style="text-decoration: underline; color: #eb34e1">html-online.com</a>)</p>
+<p class="tc" style="margin: 0; text-align: left; padding: 6 0; margin-top: -6;">-3. You can also embed the code into a Google Site or any website builder that allows embedding. :)</p>
+</div>
+</center>
+
+</body>
